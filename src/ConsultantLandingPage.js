@@ -16,6 +16,7 @@ import shopIconImageSrc from "images/shop-icon.svg";
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
+import HeroImage from "./images/hero_image.jpeg";
 
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
@@ -28,8 +29,9 @@ export default () => {
       <Hero
         heading={<>Lead Developer & Software Architect</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        description="Seit mehr als 10 Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur. "
+        imageSrc={HeroImage}
+        // imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         imageCss={imageCss}
         imageDecoratorBlob={true}
         primaryButtonText="Order Now"
@@ -73,21 +75,21 @@ export default () => {
         cards={[
           {
             imageSrc: SupportIconImage,
-            title: "24/7 Support",
+            title: "Pragmatismus",
             description:
-            "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
+            "alle Aufgaben gehe ich lösungsorientiert und professionell an",
           },
           {
             imageSrc: ShieldIconImage,
-            title: "Strong Teams",
+            title: "Innovation",
             description:
-            "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
+            "mit den neusten Standards der Technik und Methodik entwickle ich qualitative Software",
           },
           {
             imageSrc: CustomerLoveIconImage,
-            title: "Customer Satisfaction",
+            title: "Transparenz",
             description:
-            "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
+            "durch offenes und transparentes Handeln, baue ich das Vertrauen meiner Kunden auf",
           },
         ]}
         linkText=""
