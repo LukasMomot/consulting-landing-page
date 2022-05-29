@@ -106,6 +106,7 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ConsultantLandingPage from "ConsultantLandingPage";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -123,6 +124,9 @@ export default function App() {
         </Route>
         <Route path="/thank-you">
           <ThankYouPage />
+        </Route>
+        <Route path="/consultant">
+          <ConsultantLandingPage></ConsultantLandingPage>
         </Route>
         <Route path="/">
           <MainLandingPage />

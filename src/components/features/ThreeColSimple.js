@@ -14,12 +14,21 @@ import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3
 const Heading = tw(SectionHeading)``;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;
 const Description = tw(SectionDescription)`text-center mx-auto`;
+// const ThreeColumnContainer = styled.div`
+//   ${tw`mt-10 flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap lg:justify-center max-w-screen-lg mx-auto`}
+// `;
+
 const ThreeColumnContainer = styled.div`
-  ${tw`mt-10 flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap lg:justify-center max-w-screen-lg mx-auto`}
+  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24`}
 `;
+// const Column = styled.div`
+//   ${tw`lg:w-1/3 py-2 max-w-xs`}
+// `;
+
 const Column = styled.div`
-  ${tw`lg:w-1/3 py-2 max-w-xs`}
+  ${tw`md:w-1/2 lg:w-1/3 py-2 flex max-w-xs`}
 `;
+
 
 const Card = styled.a`
   ${tw`flex flex-col items-center text-center border h-full mx-4 px-4 py-8 rounded transition-transform duration-300 hover:cursor-pointer transform hover:scale-105`}
