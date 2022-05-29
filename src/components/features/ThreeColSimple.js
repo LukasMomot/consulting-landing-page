@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
+import { Container, ContentWithPaddingLg } from "components/misc/Layouts.js";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
@@ -18,11 +18,11 @@ const ThreeColumnContainer = styled.div`
   ${tw`mt-10 flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap lg:justify-center max-w-screen-lg mx-auto`}
 `;
 const Column = styled.div`
-  ${tw`lg:w-1/3 max-w-xs`}
+  ${tw`lg:w-1/3 py-2 max-w-xs`}
 `;
 
 const Card = styled.a`
-  ${tw`flex flex-col items-center text-center h-full mx-4 px-4 py-8 rounded transition-transform duration-300 hover:cursor-pointer transform hover:scale-105 `}
+  ${tw`flex flex-col items-center text-center border h-full mx-4 px-4 py-8 rounded transition-transform duration-300 hover:cursor-pointer transform hover:scale-105`}
   .imageContainer {
     ${tw`text-center rounded-full p-4 bg-gray-100`}
     img {
@@ -87,7 +87,7 @@ export default ({
    */
   return (
     <Container>
-      <ContentWithPaddingXl>
+      <ContentWithPaddingLg>
         {subheading && <Subheading>{subheading}</Subheading>}
         {heading && <Heading>{heading}</Heading>}
         {description && <Description>{description}</Description>}
@@ -110,7 +110,7 @@ export default ({
             </Column>
           ))}
         </ThreeColumnContainer>
-      </ContentWithPaddingXl>
+      </ContentWithPaddingLg>
       <DecoratorBlob />
     </Container>
   );

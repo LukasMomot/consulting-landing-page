@@ -60,6 +60,7 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 
 export default ({
   heading = "Modern React Templates, Just For You",
+  headingSecond = "",
  description="Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.",
   primaryButtonText="Get Started",
   primaryButtonUrl="#",
@@ -80,6 +81,7 @@ export default ({
         <TwoColumn>
           <LeftColumn>
             <Heading>{heading}</Heading>
+            <Heading>{headingSecond}</Heading>
             <Paragraph>{description}</Paragraph>
             <Actions>
               <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
