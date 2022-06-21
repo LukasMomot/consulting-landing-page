@@ -19,7 +19,7 @@ const Description = tw(SectionDescription)`text-center mx-auto`;
 // `;
 
 const ThreeColumnContainer = styled.div`
-  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24`}
+  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-12`}
 `;
 // const Column = styled.div`
 //   ${tw`lg:w-1/3 py-2 max-w-xs`}
