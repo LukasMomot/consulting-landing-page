@@ -39,7 +39,10 @@ export default () => {
         primaryButtonUrl="#contact"
         // watchVideoButtonText="Meet The Chefs"
       />
-      <Services></Services>
+      <section id="services">
+        <Services></Services>
+      </section>
+
       {/* <Features
         heading={
           <>
@@ -70,32 +73,34 @@ export default () => {
         imageCss={tw`w-20! h-20!`}
       /> */}
 
-      <Features
-        subheading={<Subheading>Our Values</Subheading>}
-        heading="We follow these."
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        cards={[
-          {
-            imageSrc: SupportIconImage,
-            title: "Pragmatismus",
-            description:
-            "alle Aufgaben gehe ich lösungsorientiert und professionell an",
-          },
-          {
-            imageSrc: ShieldIconImage,
-            title: "Innovation",
-            description:
-            "mit den neusten Standards der Technik und Methodik entwickle ich qualitative Software",
-          },
-          {
-            imageSrc: CustomerLoveIconImage,
-            title: "Transparenz",
-            description:
-            "durch offenes und transparentes Handeln, baue ich das Vertrauen meiner Kunden auf",
-          },
-        ]}
-        linkText=""
-      />
+      <section id="values">
+        <Features
+          subheading={<Subheading>Our Values</Subheading>}
+          heading="We follow these."
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          cards={[
+            {
+              imageSrc: SupportIconImage,
+              title: "Pragmatismus",
+              description:
+                "alle Aufgaben gehe ich lösungsorientiert und professionell an",
+            },
+            {
+              imageSrc: ShieldIconImage,
+              title: "Innovation",
+              description:
+                "mit den neusten Standards der Technik und Methodik entwickle ich qualitative Software",
+            },
+            {
+              imageSrc: CustomerLoveIconImage,
+              title: "Transparenz",
+              description:
+                "durch offenes und transparentes Handeln, baue ich das Vertrauen meiner Kunden auf",
+            },
+          ]}
+          linkText=""
+        />
+      </section>
       <section id="contact">
         <Contact
           subheading={<Subheading>Kontakt</Subheading>}
@@ -125,7 +130,7 @@ export default () => {
           imageDecoratorBlob={true}
           imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
         />
-     </section>
+      </section>
       <Footer />
     </AnimationRevealPage>
   );
