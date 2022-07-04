@@ -125,7 +125,7 @@ export default () => {
           textOnLeft={false}
           primaryButtonText="Kontaktanfrage"
           // https://mailtolink.me/
-          primaryButtonUrl="mailto:lukasz.momot-consulting.de?subject=Kontaktanfrage%20%C3%BCber%20Website"
+          primaryButtonUrl="mailto:lukasz@momot-consulting.de?subject=Kontaktanfrage%20%C3%BCber%20Website"
           imageSrc={
             contactLogoSrc
           }
