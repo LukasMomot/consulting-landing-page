@@ -6,7 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/logo.svg";
+import logoTemplate from "../../images/logo.svg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
@@ -37,7 +37,7 @@ export const LogoLink = styled(NavLink)`
   ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
 
   img {
-    ${tw`w-10 mr-3`}
+    ${tw`w-48 mr-3`}
   }
 `;
 
@@ -86,14 +86,20 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
+
   const defaultLogoLink = (
     <LogoLink href="/">
-      <img src={logo} alt="logo" />
-      Treact
+      <img src={logoTemplate} alt="logo" />
     </LogoLink>
   );
 
-  logoLink = logoLink || defaultLogoLink;
+  const logo = (
+    <LogoLink href="/">
+    <img src={logoLink} alt="logo" />
+  </LogoLink>
+  )
+
+  logoLink = logoLink ? logo : defaultLogoLink;
   links = links || defaultLinks;
 
   return (
