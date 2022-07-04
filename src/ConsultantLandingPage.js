@@ -8,6 +8,7 @@ import Contact from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
+import contactLogoSrc from "./images/consultant_contact.jpeg";
 
 import chefIconImageSrc from "images/chef-icon.svg";
 import celebrationIconImageSrc from "images/celebration-icon.svg";
@@ -124,7 +125,7 @@ export default () => {
           textOnLeft={false}
           primaryButtonText="Latest Offers"
           imageSrc={
-            "https://images.unsplash.com/photo-1460306855393-0410f61241c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+            contactLogoSrc
           }
           imageCss={imageCss}
           imageDecoratorBlob={true}
