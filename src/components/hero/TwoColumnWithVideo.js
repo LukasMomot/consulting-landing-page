@@ -15,6 +15,7 @@ import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
 import DesignIllustration from "../../images/design-illustration.svg";
+import Logo from "../../images/logo_consulting.png";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -82,7 +83,7 @@ export default ({
 
   return (
     <>
-      <Header />
+      <Header logoLink={Logo} />
       <Container>
         <TwoColumn>
           <LeftColumn>
@@ -91,8 +92,7 @@ export default ({
             <Paragraph>{description}</Paragraph>
             <SecondParagraph>{ subDescription }</SecondParagraph>
             <Actions>
-              {/* <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton> */}
-              <PrimaryActionButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryActionButton>
+              <PrimaryActionButton href={primaryButtonUrl}>{primaryButtonText}</PrimaryActionButton>
               {/* <WatchVideoButton onClick={toggleModal}>
                 <span className="playIconContainer">
                   <PlayIcon className="playIcon" />
