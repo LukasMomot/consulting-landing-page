@@ -16,6 +16,8 @@ import FastIconImage from "../../images/fast-icon.svg";
 import ReliableIconImage from "../../images/reliable-icon.svg";
 import SimpleIconImage from "../../images/simple-icon.svg";
 
+import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+
 const Container = tw.div`relative`;
 
 const ThreeColumnContainer = styled.div`
@@ -31,8 +33,8 @@ const Card = styled.div`
   ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-primary-500 rounded-lg mt-12`}
   .imageContainer {
     ${tw`border-2 border-primary-500 text-center rounded-full p-6 flex-shrink-0 relative`}
-    img {
-      ${tw`w-8 h-8`}
+    svg {
+      ${tw`w-8 h-8 stroke-current text-primary-500`}
     }
   }
 
@@ -64,7 +66,7 @@ export default () => {
 
   const cards = [
     {
-      imageSrc: ShieldIconImage,
+      imageSrc: PriceIcon,
       title: "Ads Management",
       description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
     },
@@ -83,7 +85,9 @@ export default () => {
           <Column key={i}>
             <Card>
               <span className="imageContainer">
-                <img src={card.imageSrc || defaultCardImage} alt="" />
+                {/* TODO: Uncomment */}
+                {/* <img src={card.imageSrc || defaultCardImage} alt="" /> */}
+               <PriceIcon />
               </span>
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
