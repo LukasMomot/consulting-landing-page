@@ -123,7 +123,9 @@ export default () => {
           }
           buttonRounded={false}
           textOnLeft={false}
-          primaryButtonText="Latest Offers"
+          primaryButtonText="Kontaktanfrage"
+          // https://mailtolink.me/
+          primaryButtonUrl="mailto:lukasz.momot-consulting.de?subject=Kontaktanfrage%20%C3%BCber%20Website"
           imageSrc={
             contactLogoSrc
           }
