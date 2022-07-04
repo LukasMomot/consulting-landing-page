@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import { SecondaryButton as SecondaryButtonBase } from "components/misc/Buttons.js";
+
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
 import {ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
 
@@ -39,6 +41,11 @@ const PrimaryButton = styled(PrimaryButtonBase)(props => [
   props.buttonRounded && tw`rounded-full`
 ]);
 
+const SecondaryButton = styled(SecondaryButtonBase)(props => [
+  tw`mt-8 ml-2 md:mt-8 text-sm inline-block`,
+  props.buttonRounded && tw`rounded-full`
+]);
+
 
 export default ({
   subheading = "Our Expertise",
@@ -49,6 +56,8 @@ export default ({
   ),
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   primaryButtonText = "Learn More",
+  secondaryButtonText = null,
+  secondaryButtonUrl = null,
   primaryButtonUrl = "https://timerse.com",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
@@ -77,6 +86,9 @@ export default ({
             <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>
+            <SecondaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+              Beraterprofil
+            </SecondaryButton>
           </TextContent>
         </TextColumn>
       </TwoColumn>
