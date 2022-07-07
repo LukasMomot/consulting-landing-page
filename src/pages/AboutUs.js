@@ -42,17 +42,17 @@ export default () => {
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         cards={[
           {
-            imageSrc: SupportIconImage,
+            imageSvg: SupportIconImage,
             title: "24/7 Support",
             description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
           },
           {
-            imageSrc: ShieldIconImage,
+            imageSvg: ShieldIconImage,
             title: "Strong Teams",
             description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
           },
           {
-            imageSrc: CustomerLoveIconImage,
+            imageSvg: CustomerLoveIconImage,
             title: "Customer Satisfaction",
             description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
           },

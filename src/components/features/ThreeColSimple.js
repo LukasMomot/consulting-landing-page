@@ -10,6 +10,7 @@ import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomizeIconImage from "images/customize-icon.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
+import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 const Heading = tw(SectionHeading)``;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;
@@ -34,8 +35,8 @@ const Card = styled.a`
   ${tw`flex flex-col items-center text-center border h-full mx-4 px-4 py-8 rounded transition-transform duration-300 hover:cursor-pointer transform hover:scale-105`}
   .imageContainer {
     ${tw`text-center rounded-full p-4 bg-gray-100`}
-    img {
-      ${tw`w-8 h-8`}
+    svg {
+      ${tw`w-8 h-8 stroke-current text-primary-500`}
     }
   }
 
@@ -62,19 +63,19 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 export default ({
   cards = [
     {
-      imageSrc: ShieldIconImage,
+      ImageSvg: PriceIcon,
       title: "Secure",
       description: "We strictly only deal with vendors that provide top notch security.",
       url: "https://timerse.com"
     },
     {
-      imageSrc: SupportIconImage,
+      ImageSvg: PriceIcon,
       title: "24/7 Support",
       description: "Lorem ipsum donor amet siti ceali placeholder text",
       url: "https://google.com"
     },
     {
-      imageSrc: CustomizeIconImage,
+      ImageSvg: PriceIcon,
       title: "Customizable",
       description: "Lorem ipsum donor amet siti ceali placeholder text",
       url: "https://reddit.com"
@@ -105,7 +106,8 @@ export default ({
             <Column key={i}>
               <Card href={card.url}>
                 <span className="imageContainer" css={imageContainerCss}>
-                  <img src={card.imageSrc} alt="" css={imageCss} />
+                   <card.ImageSvg />
+                  {/* <img src={card.imageSrc} alt="" css={imageCss} /> */}
                 </span>
                 <span className="title">{card.title}</span>
                 <p className="description">{card.description}</p>

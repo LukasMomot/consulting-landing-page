@@ -19,6 +19,8 @@ import ShieldIconImage from "images/shield-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
 import HeroImage from "./images/hero_image.jpeg";
 
+import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
@@ -81,19 +83,19 @@ export default () => {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           cards={[
             {
-              imageSrc: SupportIconImage,
+              ImageSvg: PriceIcon,
               title: "Pragmatismus",
               description:
                 "alle Aufgaben gehe ich lösungsorientiert und professionell an",
             },
             {
-              imageSrc: ShieldIconImage,
+              ImageSvg: PriceIcon,
               title: "Innovation",
               description:
                 "mit den neusten Standards der Technik und Methodik entwickle ich qualitative Software",
             },
             {
-              imageSrc: CustomerLoveIconImage,
+              ImageSvg: PriceIcon,
               title: "Transparenz",
               description:
                 "durch offenes und transparentes Handeln, baue ich das Vertrauen meiner Kunden auf",

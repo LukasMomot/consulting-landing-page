@@ -11,9 +11,9 @@ import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js"
 import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 
-import chefIconImageSrc from "images/chef-icon.svg";
-import celebrationIconImageSrc from "images/celebration-icon.svg";
-import shopIconImageSrc from "images/shop-icon.svg";
+import { ReactComponent as ChefIconImage}  from "images/chef-icon.svg";
+import { ReactComponent as  CelebrationIconImage }  from "images/celebration-icon.svg";
+import { ReactComponent as ShopIconImage }  from "images/shop-icon.svg";
 
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
@@ -76,19 +76,19 @@ export default () => {
         }
         cards={[
           {
-            imageSrc: shopIconImageSrc,
+            ImageSvg: ShopIconImage,
             title: "230+ Locations",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
             url: "https://google.com"
           },
           {
-            imageSrc: chefIconImageSrc,
+            ImageSvg: ChefIconImage,
             title: "Professional Chefs",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
             url: "https://timerse.com"
           },
           {
-            imageSrc: celebrationIconImageSrc,
+            ImageSvg: CelebrationIconImage,
             title: "Birthday Catering",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
             url: "https://reddit.com"
