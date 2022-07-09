@@ -30,6 +30,7 @@ const SocialLink = styled.a`
 
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm`
 export default () => {
+  const currentYear = new Date().getFullYear();
   return (
     <Container>
       <Content>
@@ -57,7 +58,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer> */}
           <CopyrightText>
-            &copy; Copyright 2020, Lukasz Momot
+            &copy; { currentYear } Copyright Lukasz Momot
           </CopyrightText>
         </Row>
       </Content>
