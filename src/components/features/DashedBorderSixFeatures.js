@@ -47,7 +47,7 @@ const Card = styled.div`
   }
 
   .description {
-    ${tw`mt-3 font-semibold text-secondary-100 text-sm leading-loose`}
+    ${tw`mt-3 font-semibold text-secondary-100 text-sm leading-relaxed text-justify`}
   }
 `;
 
@@ -64,18 +64,33 @@ export default () => {
    *  If a key for a particular card is not provided, a default value is used
    */
 
-  const cards = [
+  // const cards = [
+  //   {
+  //     imageSrc: PriceIcon,
+  //     title: "Ads Management",
+  //     description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+  //   },
+  //   { imageSrc: SupportIconImage, title: "Video Marketing" },
+  //   { imageSrc: CustomizeIconImage, title: "Customer Relation" },
+  //   { imageSrc: ReliableIconImage, title: "Product Outreach" },
+  //   { imageSrc: FastIconImage, title: "PR Campaign" },
+  //   { imageSrc: SimpleIconImage, title: "Product Expansion" }
+  // ];
+
+    const cards = [
     {
       imageSrc: PriceIcon,
-      title: "Ads Management",
+      title: "Fullstack Softwareentwicklung",
       description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
     },
-    { imageSrc: SupportIconImage, title: "Video Marketing" },
-    { imageSrc: CustomizeIconImage, title: "Customer Relation" },
-    { imageSrc: ReliableIconImage, title: "Product Outreach" },
-    { imageSrc: FastIconImage, title: "PR Campaign" },
-    { imageSrc: SimpleIconImage, title: "Product Expansion" }
+    { imageSrc: SupportIconImage, title: "Architektur", description: `Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
+Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig, modern aber vor allem gut an die Anforderungen angepasst sein sollte. Nur eine pragmatische und maß-geschnittene hilf dem Unternehmen seine Ziele bestens zu erreichen.` },
+    { imageSrc: CustomizeIconImage, title: "Methodik" },
+    { imageSrc: ReliableIconImage, title: "Cloud" },
+    { imageSrc: FastIconImage, title: "Agile" },
+    { imageSrc: SimpleIconImage, title: "Know-How Transfer" }
   ];
+
 
   return (
     <Container>
