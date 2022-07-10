@@ -9,14 +9,22 @@ import defaultCardImage from "../../images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
 
-import SupportIconImage from "../../images/support-icon.svg";
-import ShieldIconImage from "../../images/shield-icon.svg";
-import CustomizeIconImage from "../../images/customize-icon.svg";
-import FastIconImage from "../../images/fast-icon.svg";
-import ReliableIconImage from "../../images/reliable-icon.svg";
-import SimpleIconImage from "../../images/simple-icon.svg";
+// import SupportIconImage from "../../images/support-icon.svg";
+// import ShieldIconImage from "../../images/shield-icon.svg";
+import { ReactComponent as CodeIcon } from "feather-icons/dist/icons/code.svg"
+import { ReactComponent as CloudIcon } from "feather-icons/dist/icons/cloud.svg"
+import { ReactComponent as ArchitectureIcon } from "feather-icons/dist/icons/layers.svg"
+import { ReactComponent as MethodikIcon } from "feather-icons/dist/icons/check-square.svg"
+import { ReactComponent as AgileIcon } from "feather-icons/dist/icons/users.svg"
+import { ReactComponent as KnowhowIcon } from "feather-icons/dist/icons/clipboard.svg"
 
-import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+
+// import CustomizeIconImage from "../../images/customize-icon.svg";
+// import FastIconImage from "../../images/fast-icon.svg";
+// import ReliableIconImage from "../../images/reliable-icon.svg";
+// import SimpleIconImage from "../../images/simple-icon.svg";
+
+// import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 const Container = tw.div`relative`;
 
@@ -79,16 +87,16 @@ export default () => {
 
     const cards = [
     {
-      imageSrc: PriceIcon,
+      image: CodeIcon,
       title: "Fullstack Softwareentwicklung",
       description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
     },
-    { imageSrc: SupportIconImage, title: "Architektur", description: `Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
+    { image: ArchitectureIcon, title: "Architektur", description: `Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
 Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig, modern aber vor allem gut an die Anforderungen angepasst sein sollte. Nur eine pragmatische und maß-geschnittene hilf dem Unternehmen seine Ziele bestens zu erreichen.` },
-    { imageSrc: CustomizeIconImage, title: "Methodik", description: (<> We create and manage ads that you need, <br/> from creation to deployment. Lorem ipsum donor sit amet consicou.</>) },
-    { imageSrc: ReliableIconImage, title: "Cloud" },
-    { imageSrc: FastIconImage, title: "Agile" },
-    { imageSrc: SimpleIconImage, title: "Know-How Transfer" }
+    { image: MethodikIcon, title: "Methodik", description: (<> We create and manage ads that you need, <br/> from creation to deployment. Lorem ipsum donor sit amet consicou.</>) },
+    { image: CloudIcon, title: "Cloud" },
+    { image: AgileIcon, title: "Agile" },
+    { image: KnowhowIcon, title: "Know-How Transfer" }
   ];
 
 
@@ -102,7 +110,8 @@ Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig
               <span className="imageContainer">
                 {/* TODO: Uncomment */}
                 {/* <img src={card.imageSrc || defaultCardImage} alt="" /> */}
-               <PriceIcon />
+               {/* <PriceIcon /> */}
+               { <card.image></card.image> }
               </span>
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
