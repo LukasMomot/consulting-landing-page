@@ -59,6 +59,8 @@ const Card = styled.div`
   }
 `;
 
+const TextHighlighted = tw.span`font-semibold text-primary-500`;
+
 const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
@@ -93,7 +95,10 @@ export default () => {
     },
     { image: ArchitectureIcon, title: "Architektur", description: `Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
 Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig, modern aber vor allem gut an die Anforderungen angepasst sein sollte. Nur eine pragmatische und maß-geschnittene hilf dem Unternehmen seine Ziele bestens zu erreichen.` },
-    { image: MethodikIcon, title: "Methodik", description: (<> We create and manage ads that you need, <br/> from creation to deployment. Lorem ipsum donor sit amet consicou.</>) },
+    { image: MethodikIcon, title: "Methodik", description: (
+    <> 
+      We create and manage ads that you need, <br/> from <TextHighlighted> Hello World</TextHighlighted> creation to deployment. Lorem ipsum donor sit amet consicou.
+    </>) },
     { image: CloudIcon, title: "Cloud" },
     { image: AgileIcon, title: "Agile" },
     { image: KnowhowIcon, title: "Know-How Transfer" }
