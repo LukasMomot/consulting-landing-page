@@ -5,6 +5,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";
 import Contact from "components/features/TwoColWithButton.js";
+import Facts from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
@@ -103,6 +104,9 @@ export default () => {
           ]}
           linkText=""
         />
+      </section>
+      <section id="facts">
+        <Facts></Facts>
       </section>
       <section id="contact">
         <Contact

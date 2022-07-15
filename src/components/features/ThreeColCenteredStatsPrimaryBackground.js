@@ -9,7 +9,7 @@ const Container = tw(ContainerBase)`my-8 lg:my-10 bg-primary-900 text-gray-100 -
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)`sm:text-3xl md:text-4xl lg:text-5xl`;
 const Subheading = tw(SubheadingBase)`text-gray-100 text-center`;
-const Description = tw(SectionDescription)`text-gray-400 text-center mx-auto max-w-screen-md`;
+const Description = tw(SectionDescription)`text-gray-100 text-center mx-auto max-w-screen-md`;
 
 const StatsContainer = tw.div`mt-8 flex flex-col sm:flex-row items-center justify-center flex-wrap max-w-screen-md justify-between mx-auto`
 const Stat = tw.div`flex flex-col text-center p-4 tracking-wide`
