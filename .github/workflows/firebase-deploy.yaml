@@ -5,6 +5,10 @@ on:
     branches:
       - release
 
+# Only to disable "treat warning as errors for now"
+env:
+  CI: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
