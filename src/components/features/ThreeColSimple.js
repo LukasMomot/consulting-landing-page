@@ -45,7 +45,7 @@ const Card = styled.a`
   }
 
   .description {
-    ${tw`mt-4 text-sm font-medium text-secondary-300`}
+    ${tw`mt-4 text-sm font-medium text-secondary-100`}
   }
 
   .link {
