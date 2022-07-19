@@ -87,18 +87,29 @@ export default () => {
   //   { imageSrc: SimpleIconImage, title: "Product Expansion" }
   // ];
 
-    const cards = [
+  const cards = [
     {
       image: CodeIcon,
       title: "Fullstack Softwareentwicklung",
       description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
     },
-    { image: ArchitectureIcon, title: "Architektur", description: `Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
-Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig, modern aber vor allem gut an die Anforderungen angepasst sein sollte. Nur eine pragmatische und maß-geschnittene hilf dem Unternehmen seine Ziele bestens zu erreichen.` },
-    { image: MethodikIcon, title: "Methodik", description: (
-    <> 
-      We create and manage ads that you need, <br/> from <TextHighlighted> Hello World</TextHighlighted> creation to deployment. Lorem ipsum donor sit amet consicou.
-    </>) },
+    {
+      image: ArchitectureIcon, title: "Architektur", description: (<>
+        Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
+        Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig, modern aber vor allem gut an die Anforderungen angepasst sein sollte.
+        Nur eine pragmatische und maß-geschnittene hilf dem Unternehmen seine Ziele bestens zu erreichen.
+        <br/>
+        <br />
+        <TextHighlighted>🏆 iSAQB Certified Professional for Software Architecture</TextHighlighted>
+      </>)
+
+    },
+    {
+      image: MethodikIcon, title: "Methodik", description: (
+        <>
+          We create and manage ads that you need, <br /> from <TextHighlighted> Hello World</TextHighlighted> creation to deployment. Lorem ipsum donor sit amet consicou.
+        </>)
+    },
     { image: CloudIcon, title: "Cloud" },
     { image: AgileIcon, title: "Agile" },
     { image: KnowhowIcon, title: "Know-How Transfer" }
@@ -115,8 +126,8 @@ Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig
               <span className="imageContainer">
                 {/* TODO: Uncomment */}
                 {/* <img src={card.imageSrc || defaultCardImage} alt="" /> */}
-               {/* <PriceIcon /> */}
-               { <card.image></card.image> }
+                {/* <PriceIcon /> */}
+                {<card.image></card.image>}
               </span>
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>

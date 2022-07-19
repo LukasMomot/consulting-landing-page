@@ -20,7 +20,11 @@ import ShieldIconImage from "images/shield-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
 import HeroImage from "./images/hero_image.jpeg";
 
-import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import { ReactComponent as TargetIcon } from "feather-icons/dist/icons/target.svg";
+import { ReactComponent as StarIcon } from "feather-icons/dist/icons/star.svg";
+import { ReactComponent as SearchIcon } from "feather-icons/dist/icons/search.svg";
+
+
 
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
@@ -84,19 +88,19 @@ export default () => {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           cards={[
             {
-              ImageSvg: PriceIcon,
+              ImageSvg: TargetIcon,
               title: "Pragmatismus",
               description:
                 "alle Aufgaben gehe ich lösungsorientiert und professionell an",
             },
             {
-              ImageSvg: PriceIcon,
+              ImageSvg: StarIcon,
               title: "Innovation",
               description:
                 "mit den neusten Standards der Technik und Methodik entwickle ich qualitative Software",
             },
             {
-              ImageSvg: PriceIcon,
+              ImageSvg: SearchIcon,
               title: "Transparenz",
               description:
                 "durch offenes und transparentes Handeln, baue ich das Vertrauen meiner Kunden auf",

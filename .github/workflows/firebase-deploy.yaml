@@ -6,7 +6,7 @@ on:
       - release
 
 jobs:
-  build:
+  release_website:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,12 +14,12 @@ jobs:
         with:
           node-version: "16.15.0"
       - run: npm ci
-      - name: Build npm
+      - name: Build Webseite
         # Only to disable "treat warning as errors for now"
         run: npm run build
         env:
           CI: false
-      - name: Deploy to  Firebase
+      - name: Deploy to Firebase
         uses: w9jds/firebase-action@v2.2.2
         with:
           args: deploy --only hosting
