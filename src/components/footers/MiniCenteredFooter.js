@@ -40,11 +40,9 @@ export default () => {
             {/* <LogoText>Treact</LogoText> */}
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
+            <Link href="/">Startseite</Link>
+            <Link href="/impressum">Impressum</Link>
+            <Link href="/datenschutz">Datenschutz</Link>
           </LinksContainer>
           {/* <SocialLinksContainer>
             <SocialLink href="https://facebook.com">

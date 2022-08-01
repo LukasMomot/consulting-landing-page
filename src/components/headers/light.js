@@ -58,7 +58,7 @@ export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
 
-export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
+export default ({ roundedHeaderButton = false, useLinks = true, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
   /*
    * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
    * This links props should be an array of "NavLinks" components which is exported from this file.
@@ -85,7 +85,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   //   </NavLinks>
   // ];
 
-    const defaultLinks = [
+  const defaultLinks = [
     <NavLinks key={1}>
       <NavLink href="#services">Dienstleistungen</NavLink>
       <NavLink href="#values">Werte</NavLink>
@@ -111,8 +111,8 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   const logo = (
     <LogoLink href="/">
-    <img src={logoLink} alt="logo" />
-  </LogoLink>
+      <img src={logoLink} alt="logo" />
+    </LogoLink>
   )
 
   logoLink = logoLink ? logo : defaultLogoLink;
@@ -122,18 +122,20 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     <Header className={className || "header-light"}>
       <DesktopNavLinks css={collapseBreakpointCss.desktopNavLinks}>
         {logoLink}
-        {links}
+        { useLinks && links}
       </DesktopNavLinks>
-
-      <MobileNavLinksContainer css={collapseBreakpointCss.mobileNavLinksContainer}>
-        {logoLink}
-        <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
-          {links}
-        </MobileNavLinks>
-        <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
-          {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
-        </NavToggle>
-      </MobileNavLinksContainer>
+      {
+        useLinks &&
+        <MobileNavLinksContainer css={collapseBreakpointCss.mobileNavLinksContainer}>
+          {logoLink}
+          <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
+            {links}
+          </MobileNavLinks>
+          <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
+            {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
+          </NavToggle>
+        </MobileNavLinksContainer>
+      }
     </Header>
   );
 };

@@ -36,7 +36,7 @@ export default () => {
     <AnimationRevealPage>
       <Hero
         heading={<>Lead Developer & Software Architect</>}
-        headingSecond={<HighlightedText>Release Test</HighlightedText>}
+        headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
         description="Seit mehr als 10 Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur."
         subDescription=".NET ⦁ NodeJS ⦁ Angular ⦁ React ⦁ Azure"
         imageSrc={HeroImage}
