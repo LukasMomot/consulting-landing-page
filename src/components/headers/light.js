@@ -125,6 +125,7 @@ export default ({ roundedHeaderButton = false, useLinks = true, logoLink, links,
         { useLinks && links}
       </DesktopNavLinks>
       {
+        // TODO: Bug here: menu disaperairng
         useLinks &&
         <MobileNavLinksContainer css={collapseBreakpointCss.mobileNavLinksContainer}>
           {logoLink}
