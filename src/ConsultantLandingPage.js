@@ -32,12 +32,15 @@ export default () => {
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
+  const yearsOfExp = new Date().getFullYear() - 2011;
+  const descriptionText = `Seit mehr als ${yearsOfExp} Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur.`
   return (
+   
     <AnimationRevealPage>
       <Hero
         heading={<>Lead Developer & Software Architect</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
-        description="Seit mehr als 10 Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur."
+        description={descriptionText}
         subDescription=".NET ⦁ NodeJS ⦁ Angular ⦁ React ⦁ Azure"
         imageSrc={HeroImage}
         // imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"

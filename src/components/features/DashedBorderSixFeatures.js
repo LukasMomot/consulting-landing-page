@@ -119,12 +119,11 @@ export default () => {
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Our Professional <span tw="text-primary-500">Services</span></Heading>
+        <Heading>Meine <span tw="text-primary-500">Dienstleistungen</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
               <span className="imageContainer">
-                {/* TODO: Uncomment */}
                 {/* <img src={card.imageSrc || defaultCardImage} alt="" /> */}
                 {/* <PriceIcon /> */}
                 {<card.image></card.image>}
