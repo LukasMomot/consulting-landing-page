@@ -86,7 +86,7 @@ export default ({
             <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>
-            <SecondaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+            <SecondaryButton buttonRounded={buttonRounded} as="a" target="_blank" href={secondaryButtonUrl}>
               Beraterprofil
             </SecondaryButton>
           </TextContent>
