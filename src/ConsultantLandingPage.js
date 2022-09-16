@@ -40,7 +40,11 @@ export default () => {
       <Hero
         heading={<>Lead Developer & Software Architect</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
-        description={descriptionText}
+        description={
+          <>
+          {descriptionText}
+          </>
+        }
         subDescription=".NET ⦁ NodeJS ⦁ Azure Cloud ⦁ Angular ⦁ React"
         imageSrc={HeroImage}
         // imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
