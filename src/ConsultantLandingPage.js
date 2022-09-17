@@ -27,16 +27,22 @@ export default () => {
   const yearsOfExp = new Date().getFullYear() - 2011;
   const descriptionText = `Seit mehr als ${yearsOfExp} Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur.`
 
-  // TODO: Calculate number of projects
-  // const numberOfProjects = 
+
+  // Projects snapshot
+  const projectNumber = 13;
+  const projectYear = 2021;
+  const projectsPerYear = 1;
+  const projectBuffer = 1;
+  const currentProjects = projectNumber + ((new Date().getFullYear() - projectYear) * projectsPerYear) + projectBuffer;
+
   const stats = [
     {
-      key: "Realisierte Projekte",
-      value: "10+",
+      key: "Erfolgreich realisierte Projekte",
+      value: `${currentProjects}+`,
     },
     {
       key: "Jahre Erfahrung",
-      value: `${yearsOfExp}`,
+      value: `${yearsOfExp}+`,
     },
     {
       key: "IT Zertifikate",
