@@ -58,19 +58,19 @@ export default ({
       ImageSvg: PriceIcon,
       title: "Secure",
       description: "We strictly only deal with vendors that provide top notch security.",
-      url: "https://timerse.com"
+      // url: "https://timerse.com"
     },
     {
       ImageSvg: PriceIcon,
       title: "24/7 Support",
       description: "Lorem ipsum donor amet siti ceali placeholder text",
-      url: "https://google.com"
+      // url: "https://google.com"
     },
     {
       ImageSvg: PriceIcon,
       title: "Customizable",
       description: "Lorem ipsum donor amet siti ceali placeholder text",
-      url: "https://reddit.com"
+      // url: "https://reddit.com"
     }
   ],
   linkText = "Learn More",
@@ -96,7 +96,8 @@ export default ({
         <ThreeColumnContainer>
           {cards.map((card, i) => (
             <Column key={i}>
-              <Card href={card.url}>
+              {/* <Card href={card.url}></Card> */}
+              <Card>
                 <span className="imageContainer" css={imageContainerCss}>
                   <card.ImageSvg />
                   {/* <img src={card.imageSrc} alt="" css={imageCss} /> */}
