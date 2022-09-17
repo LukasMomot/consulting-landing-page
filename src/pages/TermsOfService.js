@@ -91,10 +91,11 @@ const modes = {
     )
   },
   datenschutz: {
-    header: "Datenschutzerklärung",
+    header: "Datenschutz",
     text: (
       <>
         <div>
+          <h1>Datenschutzerklärung</h1>
           <div>
             <p>Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung von
               personenbezogenen Daten (im Folgenden auch nur als "Daten" bezeichnet) aufklären. Personenbezogene Daten
