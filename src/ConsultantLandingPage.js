@@ -6,18 +6,10 @@ import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";
 import Contact from "components/features/TwoColWithButton.js";
 import Facts from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
-import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
 import contactLogoSrc from "./images/consultant_contact.jpeg";
 
-import chefIconImageSrc from "images/chef-icon.svg";
-import celebrationIconImageSrc from "images/celebration-icon.svg";
-import shopIconImageSrc from "images/shop-icon.svg";
-
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomerLoveIconImage from "images/simple-icon.svg";
 import HeroImage from "./images/hero_image.jpeg";
 
 import { ReactComponent as TargetIcon } from "feather-icons/dist/icons/target.svg";
@@ -29,30 +21,29 @@ import { ReactComponent as SearchIcon } from "feather-icons/dist/icons/search.sv
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
-  const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
+  const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`; //eslint-disable-line
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
   const yearsOfExp = new Date().getFullYear() - 2011;
   const descriptionText = `Seit mehr als ${yearsOfExp} Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur.`
   return (
-   
+
     <AnimationRevealPage>
       <Hero
         heading={<>Lead Developer & Software Architect</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
         description={
           <>
-          {descriptionText}
+            {descriptionText}
           </>
         }
         subDescription=".NET ⦁ NodeJS ⦁ Azure Cloud ⦁ Angular ⦁ React"
         imageSrc={HeroImage}
-        // imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         imageCss={imageCss}
         imageDecoratorBlob={true}
         primaryButtonText="Kontakt aufnehmen"
         primaryButtonUrl="#contact"
-        // watchVideoButtonText="Meet The Chefs"
+
       />
       <section id="services">
         <Services></Services>

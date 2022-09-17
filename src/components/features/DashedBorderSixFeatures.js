@@ -8,23 +8,12 @@ import { SectionHeading } from "components/misc/Headings.js";
 import defaultCardImage from "../../images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
-
-// import SupportIconImage from "../../images/support-icon.svg";
-// import ShieldIconImage from "../../images/shield-icon.svg";
 import { ReactComponent as CodeIcon } from "feather-icons/dist/icons/code.svg"
 import { ReactComponent as CloudIcon } from "feather-icons/dist/icons/cloud.svg"
 import { ReactComponent as ArchitectureIcon } from "feather-icons/dist/icons/layers.svg"
 import { ReactComponent as MethodikIcon } from "feather-icons/dist/icons/check-square.svg"
 import { ReactComponent as AgileIcon } from "feather-icons/dist/icons/users.svg"
 import { ReactComponent as KnowhowIcon } from "feather-icons/dist/icons/clipboard.svg"
-
-
-// import CustomizeIconImage from "../../images/customize-icon.svg";
-// import FastIconImage from "../../images/fast-icon.svg";
-// import ReliableIconImage from "../../images/reliable-icon.svg";
-// import SimpleIconImage from "../../images/simple-icon.svg";
-
-// import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 const Container = tw.div`relative`;
 
@@ -98,7 +87,7 @@ export default () => {
         Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
         Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig, modern aber vor allem gut an die Anforderungen angepasst sein sollte.
         Nur eine pragmatische und maß-geschnittene hilf dem Unternehmen seine Ziele bestens zu erreichen.
-        <br/>
+        <br />
         <br />
         <TextHighlighted>🏆 iSAQB Certified Professional for Software Architecture</TextHighlighted>
       </>)
@@ -124,8 +113,6 @@ export default () => {
           <Column key={i}>
             <Card>
               <span className="imageContainer">
-                {/* <img src={card.imageSrc || defaultCardImage} alt="" /> */}
-                {/* <PriceIcon /> */}
                 {<card.image></card.image>}
               </span>
               <span className="textContainer">

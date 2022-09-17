@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import { Container, Content2Xl } from "components/misc/Layouts";
@@ -62,7 +63,7 @@ export default () => {
             <Description tw="mt-12">Your Download Will Begin Shortly. If it does not, <NavLink href={downloadUrl} download>click this link</NavLink>.</Description>
             <div tw="mt-12 text-center">
               I am working on another library similar to Treact, with <span tw="font-bold">more components</span> and a much <span tw="font-bold">better developer
-              experience</span>.
+                experience</span>.
             </div>
             <div tw="mt-12 text-center">
               If you liked Treact and would like to get updates on the library I am working on among other things, do <span tw="font-bold">follow</span> me on
