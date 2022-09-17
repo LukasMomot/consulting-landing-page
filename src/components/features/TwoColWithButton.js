@@ -42,7 +42,7 @@ const PrimaryButton = styled(PrimaryButtonBase)(props => [
 ]);
 
 const SecondaryButton = styled(SecondaryButtonBase)(props => [
-  tw`mt-8 w-44 ml-3 sm:ml-0 md:mt-8 text-sm inline-block text-center`,
+  tw`mt-8 w-44 sm:ml-0 md:ml-3 md:mt-8 text-sm inline-block text-center`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
