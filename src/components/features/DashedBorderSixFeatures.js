@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -80,7 +81,12 @@ export default () => {
     {
       image: CodeIcon,
       title: "Fullstack Softwareentwicklung",
-      description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+      description: (
+        <>
+          Leidenschaftlich implementiere ich komplexe Webprojekte sowohl im Frontend als auch im Backend.
+          Ich setze auf qualitative und innovative Softwareentwicklung unter Einhaltung von zahlreichen Best Practices (z. B Clean Code, automatisierte Tests uvm.)
+        </>
+      )
     },
     {
       image: ArchitectureIcon, title: "Architektur", description: (<>
@@ -96,12 +102,40 @@ export default () => {
     {
       image: MethodikIcon, title: "Methodik", description: (
         <>
-          We create and manage ads that you need, <br /> from <TextHighlighted> Hello World</TextHighlighted> creation to deployment. Lorem ipsum donor sit amet consicou.
+          Ein gutes und effizientes Team kann im Projekt viel erreichen. Die gängigen Methoden und Best Practices aus dem Bereich Technical Leadership.
+          Zu diesen gehören: Pair und Mob Programming, Anforderungen, Management von technischen Schulden und Verbessrungen.
+          Ich helfe meinen Kunden die erfolgreich einzuführen.
         </>)
     },
-    { image: CloudIcon, title: "Cloud" },
-    { image: AgileIcon, title: "Agile" },
-    { image: KnowhowIcon, title: "Know-How Transfer" }
+    {
+      image: CloudIcon, title: "Cloud", description: (
+        <>
+          Moderne cloud-basierte Systeme gehören der Zukunft an. Die Cloud bietet weitreichende Vorteile im Bereich: Skalierbarkeit, Performanz und Time-Time to Market. Mein,
+          Meine umfrangreiche Erfahrung im Bereich Cloud Native und Serverless hilft Ihnen sowohl Ihre bestehende Legacy-Software zu modernisieren als auch eine „greenfield“ Projekte erfolgreich umzusetzen.
+        </>
+      )
+    },
+    {
+      image: AgileIcon, title: "Agile", description: (
+        <>
+          Seit mehreren Jahren arbeite ich in verschiedenen Rollen nach agilen Methodiken wie Scrum oder Kanban.
+          Meine Kenntnisse beweisen folgende Zertifikate:
+          <br />
+          <br />
+          <TextHighlighted>🏆 Professional Scrum Master I</TextHighlighted>
+          <br />
+          <TextHighlighted>🏆 Scaled Professional Scrum</TextHighlighted>
+        </>
+      )
+    },
+    {
+      image: KnowhowIcon, title: "Know-How Transfer", description: (
+        <>
+          Gerne gebe ich mein Wissen and die Mitarbeiter des Kunden weiter. Ich bevorzuge sowohl umfangreiche Formen des Wissenstransfer wie Workshops und Präsentationen,
+          als auch direkte wie Coaching und Mentoring.
+        </>
+      )
+    }
   ];
 
 

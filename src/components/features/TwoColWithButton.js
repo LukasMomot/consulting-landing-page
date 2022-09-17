@@ -7,7 +7,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { SecondaryButton as SecondaryButtonBase } from "components/misc/Buttons.js";
 
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
-import {ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
+import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
@@ -42,7 +42,7 @@ const PrimaryButton = styled(PrimaryButtonBase)(props => [
 ]);
 
 const SecondaryButton = styled(SecondaryButtonBase)(props => [
-  tw`mt-8 w-44 ml-3 md:mt-8 text-sm inline-block text-center`,
+  tw`mt-8 w-44 ml-3 sm:ml-0 md:mt-8 text-sm inline-block text-center`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
@@ -75,7 +75,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image css={imageCss} src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded}/>
+          <Image css={imageCss} src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
           {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>

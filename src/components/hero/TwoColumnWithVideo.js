@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -67,14 +68,14 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 export default ({
   heading = "Modern React Templates, Just For You",
   headingSecond = "",
-  description="Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.",
+  description = "Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.",
   subDescription = "",
-  primaryButtonText="Get Started",
-  primaryButtonUrl="#",
-  watchVideoButtonText="Watch Video",
-  watchVideoYoutubeUrl="https://www.youtube.com/embed/_GuOjXYl5ew",
-  imageSrc=DesignIllustration,
-  imageCss=null,
+  primaryButtonText = "Get Started",
+  primaryButtonUrl = "#",
+  watchVideoButtonText = "Watch Video",
+  watchVideoYoutubeUrl = "https://www.youtube.com/embed/_GuOjXYl5ew",
+  imageSrc = DesignIllustration,
+  imageCss = null,
   imageDecoratorBlob = false,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -90,7 +91,7 @@ export default ({
             <Heading>{heading}</Heading>
             <Heading>{headingSecond}</Heading>
             <Paragraph>{description}</Paragraph>
-            <SecondParagraph>{ subDescription }</SecondParagraph>
+            <SecondParagraph>{subDescription}</SecondParagraph>
             <Actions>
               <PrimaryActionButton href={primaryButtonUrl}>{primaryButtonText}</PrimaryActionButton>
               {/* <WatchVideoButton onClick={toggleModal}>
