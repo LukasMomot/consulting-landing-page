@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -6,25 +7,16 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import { SectionDescription } from "components/misc/Typography.js";
 import { Container, ContentWithPaddingLg } from "components/misc/Layouts.js";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomizeIconImage from "images/customize-icon.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 const Heading = tw(SectionHeading)``;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;
 const Description = tw(SectionDescription)`text-center mx-auto`;
-// const ThreeColumnContainer = styled.div`
-//   ${tw`mt-10 flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap lg:justify-center max-w-screen-lg mx-auto`}
-// `;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-12`}
 `;
-// const Column = styled.div`
-//   ${tw`lg:w-1/3 py-2 max-w-xs`}
-// `;
 
 const Column = styled.div`
   ${tw`md:w-1/2 lg:w-1/3 py-2 flex max-w-xs`}
@@ -106,7 +98,7 @@ export default ({
             <Column key={i}>
               <Card href={card.url}>
                 <span className="imageContainer" css={imageContainerCss}>
-                   <card.ImageSvg />
+                  <card.ImageSvg />
                   {/* <img src={card.imageSrc} alt="" css={imageCss} /> */}
                 </span>
                 <span className="title">{card.title}</span>

@@ -6,18 +6,10 @@ import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";
 import Contact from "components/features/TwoColWithButton.js";
 import Facts from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
-import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
 import contactLogoSrc from "./images/consultant_contact.jpeg";
 
-import chefIconImageSrc from "images/chef-icon.svg";
-import celebrationIconImageSrc from "images/celebration-icon.svg";
-import shopIconImageSrc from "images/shop-icon.svg";
-
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomerLoveIconImage from "images/simple-icon.svg";
 import HeroImage from "./images/hero_image.jpeg";
 
 import { ReactComponent as TargetIcon } from "feather-icons/dist/icons/target.svg";
@@ -29,68 +21,53 @@ import { ReactComponent as SearchIcon } from "feather-icons/dist/icons/search.sv
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
-  const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
+  const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`; //eslint-disable-line
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
   const yearsOfExp = new Date().getFullYear() - 2011;
   const descriptionText = `Seit mehr als ${yearsOfExp} Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur.`
+
+  // TODO: Calculate number of projects
+  // const numberOfProjects = 
+  const stats = [
+    {
+      key: "Realisierte Projekte",
+      value: "10+",
+    },
+    {
+      key: "Jahre Erfahrung",
+      value: `${yearsOfExp}`,
+    },
+    {
+      key: "IT Zertifikate",
+      value: "7+",
+    },
+  ]
   return (
-   
     <AnimationRevealPage>
       <Hero
         heading={<>Lead Developer & Software Architect</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
         description={
           <>
-          {descriptionText}
+            {descriptionText}
           </>
         }
         subDescription=".NET ⦁ NodeJS ⦁ Azure Cloud ⦁ Angular ⦁ React"
         imageSrc={HeroImage}
-        // imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         imageCss={imageCss}
         imageDecoratorBlob={true}
         primaryButtonText="Kontakt aufnehmen"
         primaryButtonUrl="#contact"
-        // watchVideoButtonText="Meet The Chefs"
+
       />
       <section id="services">
         <Services></Services>
       </section>
 
-      {/* <Features
-        heading={
-          <>
-            Technische <HighlightedText>Skills.</HighlightedText>
-          </>
-        }
-        cards={[
-          {
-            imageSrc: shopIconImageSrc,
-            title: "230+ Locations",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "https://google.com",
-          },
-          {
-            imageSrc: chefIconImageSrc,
-            title: "Professional Chefs",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "https://timerse.com",
-          },
-          {
-            imageSrc: celebrationIconImageSrc,
-            title: "Birthday Catering",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "https://reddit.com",
-          },
-        ]}
-        imageContainerCss={tw`p-2!`}
-        imageCss={tw`w-20! h-20!`}
-      /> */}
-
       <section id="values">
         <Features
-          subheading={<Subheading>Our Values</Subheading>}
+          subheading={<Subheading>Werte</Subheading>}
           heading="We follow these."
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           cards={[
@@ -117,7 +94,7 @@ export default () => {
         />
       </section>
       <section id="facts">
-        <Facts></Facts>
+        <Facts heading="Die Zahlen, die für mich sprechen" stats={stats}></Facts>
       </section>
       <section id="contact">
         <Contact
@@ -130,12 +107,14 @@ export default () => {
           }
           description={
             <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Möchten Sie mich als <strong>Technologiepartner</strong> and Ihrer Seite haben oder brauchen Sie Beratung, wie Sie Ihr Unternehmen digitaler machen?
               <br />
               <br />
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Dann freue ich mich auf Ihre E-Mail.
+              Gemeinsam erschaffen wir moderne und innovative digitale Produkte.
+              <br />
+              <br />
+              Eine vollständige Liste meiner Kompetenzen und Referenzen (Freelancermap.de Profil) finden Sie unter dem Link "Beraterprofil"
             </Description>
           }
           buttonRounded={false}
