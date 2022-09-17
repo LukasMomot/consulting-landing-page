@@ -155,6 +155,7 @@ module.exports = {
     spacing: {
       px: '1px',
       '0': '0',
+      '0.5': '0.125rem',  // Added new unit
       '1': '0.25rem',
       '2': '0.5rem',
       '3': '0.75rem',
@@ -210,8 +211,8 @@ module.exports = {
       "2xl": '1rem',
       "3xl": '1.5rem',
       "4xl": '2.5rem',
-      "5xl":'3rem',
-      "6xl":'4.5rem',
+      "5xl": '3rem',
+      "6xl": '4.5rem',
       full: '9999px',
     },
     borderWidth: {

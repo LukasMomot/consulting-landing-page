@@ -12,7 +12,7 @@ import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sig
 
 const Heading = tw(SectionHeading)``;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;
-const Description = tw(SectionDescription)`text-center mx-auto`;
+const Description = tw(SectionDescription)`text-center mx-auto max-w-3xl`;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-12`}

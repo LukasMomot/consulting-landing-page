@@ -55,6 +55,8 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
+const ListContainer = tw.ul`inline-block mt-2`;
+const ListItem = tw.li`mb-0.5`;
 export default () => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component):
@@ -83,8 +85,15 @@ export default () => {
       title: "Fullstack Softwareentwicklung",
       description: (
         <>
-          Leidenschaftlich implementiere ich komplexe Webprojekte sowohl im Frontend als auch im Backend.
-          Ich setze auf qualitative und innovative Softwareentwicklung unter Einhaltung von zahlreichen Best Practices (z. B Clean Code, automatisierte Tests uvm.)
+          Leidenschaftlich implementiere ich komplexe Webprojekte sowohl im  <TextHighlighted>Frontend</TextHighlighted> als auch im <TextHighlighted>Backend</TextHighlighted>.
+          Ich setze auf qualitative und innovative Softwareentwicklung unter Einhaltung von zahlreichen Best Practices:
+          <ListContainer>
+            <ListItem>✅ Clean Code</ListItem>
+            <ListItem>✅ Automatisierte Tests</ListItem>
+            <ListItem>✅ Continous Integration (CI/CD)</ListItem>
+            <ListItem>✅ SOLID</ListItem>
+            <ListItem>✅ und viel mehr… </ListItem>
+          </ListContainer>
         </>
       )
     },
@@ -93,9 +102,9 @@ export default () => {
         Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
         Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig, modern aber vor allem gut an die Anforderungen angepasst sein sollte.
         Nur eine pragmatische und maß-geschnittene hilf dem Unternehmen seine Ziele bestens zu erreichen.
-        <br />
-        <br />
-        <TextHighlighted>🏆 iSAQB Certified Professional for Software Architecture</TextHighlighted>
+        <ListContainer>
+          <ListItem><TextHighlighted>🏆 iSAQB Certified Professional for Software Architecture</TextHighlighted></ListItem>
+        </ListContainer>
       </>)
 
     },
@@ -121,10 +130,14 @@ export default () => {
           Seit mehreren Jahren arbeite ich in verschiedenen Rollen nach agilen Methodiken wie Scrum oder Kanban.
           Meine Kenntnisse beweisen folgende Zertifikate:
           <br />
-          <br />
-          <TextHighlighted>🏆 Professional Scrum Master I</TextHighlighted>
-          <br />
-          <TextHighlighted>🏆 Scaled Professional Scrum</TextHighlighted>
+          <ListContainer>
+            <ListItem>
+              <TextHighlighted>🏆 Professional Scrum Master I</TextHighlighted>
+            </ListItem>
+            <ListItem>
+              <TextHighlighted>🏆 Scaled Professional Scrum</TextHighlighted>
+            </ListItem>
+          </ListContainer>
         </>
       )
     },
@@ -151,9 +164,9 @@ export default () => {
               </span>
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
-                <p className="description">
+                <div className="description">
                   {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud. Sic Semper Tyrannis. Neoas Calie artel."}
-                </p>
+                </div>
               </span>
             </Card>
           </Column>

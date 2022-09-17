@@ -27,17 +27,20 @@ export default () => {
   const yearsOfExp = new Date().getFullYear() - 2011;
   const descriptionText = `Seit mehr als ${yearsOfExp} Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur.`
 
+  function calculateCurrentProjects() {
+    const projectNumber = 13;
+    const projectYear = 2021;
+    const projectsPerYear = 1;
+    const projectBuffer = 1;
 
-  // Projects snapshot
-  const projectNumber = 13;
-  const projectYear = 2021;
-  const projectsPerYear = 1;
-  const projectBuffer = 1;
-  const currentProjects = projectNumber + ((new Date().getFullYear() - projectYear) * projectsPerYear) + projectBuffer;
+    return projectNumber + ((new Date().getFullYear() - projectYear) * projectsPerYear) + projectBuffer;
+  }
+
+  const currentProjects = calculateCurrentProjects();
 
   const stats = [
     {
-      key: "Erfolgreich realisierte Projekte",
+      key: "Erfolgreiche Kundenprojekte",
       value: `${currentProjects}+`,
     },
     {
@@ -74,8 +77,8 @@ export default () => {
       <section id="values">
         <Features
           subheading={<Subheading>Werte</Subheading>}
-          heading="We follow these."
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          heading="Meine Werte für Ihre digitale Zukunft"
+          description="Ich stehe für technisches Know-How und Professionalität. Sie erhalten mit mir die besten Leistungen. Um diesen großen Qualitätsansprüchen gerecht zu werden, lebe ich folgende Werte:"
           cards={[
             {
               ImageSvg: TargetIcon,
@@ -120,7 +123,7 @@ export default () => {
               Gemeinsam erschaffen wir moderne und innovative digitale Produkte.
               <br />
               <br />
-              Eine vollständige Liste meiner Kompetenzen und Referenzen (Freelancermap.de Profil) finden Sie unter dem Link "Beraterprofil"
+              Eine vollständige Liste meiner Kompetenzen und Referenzen finden Sie unter dem Link <i>Beraterprofil</i>.
             </Description>
           }
           buttonRounded={false}
