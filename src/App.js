@@ -102,10 +102,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 import TermsOfServicePage from "pages/TermsOfService";
-import PrivacyPolicyPage from "pages/PrivacyPolicy";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ConsultantLandingPage from "ConsultantLandingPage";
@@ -131,10 +129,10 @@ export default function App() {
           <ConsultantLandingPage></ConsultantLandingPage>
         </Route>
         <Route path="/impressum">
-          <TermsOfServicePage></TermsOfServicePage>
+          <TermsOfServicePage mode="impressum"></TermsOfServicePage>
         </Route>
         <Route path="/datenschutz">
-          <PrivacyPolicyPage></PrivacyPolicyPage>
+          <TermsOfServicePage mode="datenschutz"></TermsOfServicePage>
         </Route>
         <Route path="/">
           {/* <MainLandingPage /> */}

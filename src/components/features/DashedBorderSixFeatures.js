@@ -138,7 +138,7 @@ export default () => {
           </Column>
         ))}
       </ThreeColumnContainer>
-      <DecoratorBlob />
+      {/* <DecoratorBlob /> */}
     </Container>
   );
 };

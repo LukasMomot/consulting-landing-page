@@ -112,7 +112,7 @@ export default ({
             </IllustrationContainer>
           </RightColumn>
         </TwoColumn>
-        <DecoratorBlob1 />
+        {/* <DecoratorBlob1 /> */}
         <StyledModal
           closeTimeoutMS={300}
           className="mainHeroModal"

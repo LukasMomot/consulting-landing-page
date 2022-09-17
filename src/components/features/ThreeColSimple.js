@@ -122,7 +122,7 @@ export default ({
           ))}
         </ThreeColumnContainer>
       </ContentWithPaddingLg>
-      <DecoratorBlob />
+      {/* <DecoratorBlob /> */}
     </Container>
   );
 };

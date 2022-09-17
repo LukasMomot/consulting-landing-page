@@ -29,7 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "yarn build && netlify deploy --prod --dir=build",
-    "publish": "git checkout release && git merge main && git push"
+    "publish": "git checkout release && git merge main --commit --no-edit && git push"
   },
   "eslintConfig": {
     "extends": "react-app",

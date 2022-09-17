@@ -40,8 +40,12 @@ export default () => {
       <Hero
         heading={<>Lead Developer & Software Architect</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
-        description={descriptionText}
-        subDescription=".NET ⦁ NodeJS ⦁ Angular ⦁ React ⦁ Azure"
+        description={
+          <>
+          {descriptionText}
+          </>
+        }
+        subDescription=".NET ⦁ NodeJS ⦁ Azure Cloud ⦁ Angular ⦁ React"
         imageSrc={HeroImage}
         // imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         imageCss={imageCss}
@@ -139,6 +143,7 @@ export default () => {
           primaryButtonText="Kontaktanfrage"
           // https://mailtolink.me/
           primaryButtonUrl="mailto:lukasz@momot-consulting.de?subject=Kontaktanfrage%20%C3%BCber%20Website"
+          secondaryButtonUrl="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/205415-profil-lukasz-momot-senior-full-stack-entwickler-software-architekt-net-nodejs-angular-react-typescript-c-.html"
           imageSrc={
             contactLogoSrc
           }
