@@ -37,12 +37,12 @@ const Heading = tw(
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
-  tw`mt-8 w-44 md:mt-8 text-sm inline-block mx-auto md:mx-0 text-center`,
+  tw`mt-8 w-44 md:w-40 md:mt-8 text-sm inline-block mx-auto md:mx-0 text-center`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
 const SecondaryButton = styled(SecondaryButtonBase)(props => [
-  tw`mt-8 w-44 sm:ml-0 md:ml-3 md:mt-8 text-sm inline-block text-center`,
+  tw`mt-8 w-44 md:w-40 sm:ml-0 md:ml-3 md:mt-8 text-sm inline-block text-center`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
