@@ -21,6 +21,7 @@ import { ReactComponent as SearchIcon } from "feather-icons/dist/icons/search.sv
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+  const BuzzwordText = tw.span`text-primary-500 font-semibold`;
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`; //eslint-disable-line
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
@@ -77,8 +78,8 @@ export default () => {
       <section id="values">
         <Features
           subheading={<Subheading>Werte</Subheading>}
-          heading="Meine Werte für Ihre digitale Zukunft"
-          description="Ich stehe für technisches Know-How und Professionalität. Sie erhalten mit mir die besten Leistungen. Um diesen großen Qualitätsansprüchen gerecht zu werden, lebe ich folgende Werte:"
+          heading="Meine Werte für Ihren Erfolg"
+          description="Ich stehe für technisches Know-How und Professionalität. Sie erhalten mit mir die besten Leistungen. Um diesen großen Qualitätsansprüchen gerecht zu werden, lebe ich folgende Werte: "
           cards={[
             {
               ImageSvg: TargetIcon,
@@ -103,7 +104,9 @@ export default () => {
         />
       </section>
       <section id="facts">
-        <Facts heading="Die Zahlen, die für mich sprechen" stats={stats}></Facts>
+        <Facts heading="Zahlen, die für mich sprechen"
+          description="Seit mehreren Jahren schaffe ich durch professionelle Beratung und Entwicklung innovativer Softwarelösungen Mehrwert für meine Kunden. Folgende Fakten sprechen für eine langfristige und erfolgreiche Zusammenarbeit mit mir."
+          stats={stats}></Facts>
       </section>
       <section id="contact">
         <Contact
@@ -116,11 +119,10 @@ export default () => {
           }
           description={
             <Description>
-              Möchten Sie mich als <strong>Technologiepartner</strong> and Ihrer Seite haben oder brauchen Sie Beratung, wie Sie Ihr Unternehmen digitaler machen?
+              Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> and Ihrer Seite haben oder brächten Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
               <br />
               <br />
-              Dann freue ich mich auf Ihre E-Mail.
-              Gemeinsam erschaffen wir moderne und innovative digitale Produkte.
+              Dann freue ich mich auf Ihre E-Mail. Gemeinsam erschaffen wir moderne und innovative digitale Produkte.
               <br />
               <br />
               Eine vollständige Liste meiner Kompetenzen und Referenzen finden Sie unter dem Link <i>Beraterprofil</i>.

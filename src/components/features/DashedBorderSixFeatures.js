@@ -85,8 +85,8 @@ export default () => {
       title: "Fullstack Softwareentwicklung",
       description: (
         <>
-          Leidenschaftlich implementiere ich komplexe Webprojekte sowohl im  <TextHighlighted>Frontend</TextHighlighted> als auch im <TextHighlighted>Backend</TextHighlighted>.
-          Ich setze auf qualitative und innovative Softwareentwicklung unter Einhaltung von zahlreichen Best Practices:
+          Leidenschaftlich implementiere ich komplexe Webprojekte sowohl im <TextHighlighted>Frontend</TextHighlighted> als auch im <TextHighlighted>Backend</TextHighlighted>.
+          Ich setze auf qualitative und innovative Softwareentwicklung unter Einhaltung von zahlreichen Best Practices.
           <ListContainer>
             <ListItem>✅ Clean Code</ListItem>
             <ListItem>✅ Automatisierte Tests</ListItem>
@@ -100,8 +100,8 @@ export default () => {
     {
       image: ArchitectureIcon, title: "Architektur", description: (<>
         Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
-        Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig, modern aber vor allem gut an die Anforderungen angepasst sein sollte.
-        Nur eine pragmatische und maß-geschnittene hilf dem Unternehmen seine Ziele bestens zu erreichen.
+        Beim Entwurf der Software lege ich großen Wert darauf, dass die Architektur zukunftsfähig, modern und vor allem gut an die Anforderungen angepasst sein sollte. Nur eine pragmatische und maßgeschneiderte Architektur hilf dem Unternehmen seine Ziele bestens zu erreichen.
+        Meine Kompetenzen im diesen Bereich beweist das anerkannte Zertifikat.
         <ListContainer>
           <ListItem><TextHighlighted>🏆 iSAQB Certified Professional for Software Architecture</TextHighlighted></ListItem>
         </ListContainer>
@@ -111,24 +111,34 @@ export default () => {
     {
       image: MethodikIcon, title: "Methodik", description: (
         <>
-          Ein gutes und effizientes Team kann im Projekt viel erreichen. Die gängigen Methoden und Best Practices aus dem Bereich Technical Leadership.
-          Zu diesen gehören: Pair und Mob Programming, Anforderungen, Management von technischen Schulden und Verbessrungen.
-          Ich helfe meinen Kunden die erfolgreich einzuführen.
+          Ein gutes und effizientes Team kann im Projekt viel erreichen. Die gängigen Methoden und Best Practices aus dem Bereich <TextHighlighted>Technical Leadership</TextHighlighted> helfen dabei den Projekterfolg zu sichern.
+          Ich unterstütze meinen Kunden folgende Methoden im Projektalltag einzuführen.
+          <ListContainer>
+            <ListItem>✅ Technische Schulden beseitigen</ListItem>
+            <ListItem>✅ Anforderungsmanagements</ListItem>
+            <ListItem>✅ Durchführung von Code Reviews</ListItem>
+            <ListItem>✅ Pair- und Mob-Programming</ListItem>
+            <ListItem>✅ und viel mehr… </ListItem>
+          </ListContainer>
         </>)
     },
     {
       image: CloudIcon, title: "Cloud", description: (
         <>
-          Moderne cloud-basierte Systeme gehören der Zukunft an. Die Cloud bietet weitreichende Vorteile im Bereich: Skalierbarkeit, Performanz und Time-Time to Market. Mein,
-          Meine umfrangreiche Erfahrung im Bereich Cloud Native und Serverless hilft Ihnen sowohl Ihre bestehende Legacy-Software zu modernisieren als auch eine „greenfield“ Projekte erfolgreich umzusetzen.
+          Moderne Cloud-basierte Systeme gehören der Zukunft an. Die Cloud bietet weitreichende Vorteile im Bereich: Skalierbarkeit, Performanz und "Time to Market".
+          <br />
+          Meine ausgiebige Erfahrung im Bereich <TextHighlighted>Cloud Native</TextHighlighted> und <TextHighlighted>Serverless</TextHighlighted> hilft Ihnen sowohl die bestehende Legacy- Software zu modernisieren als auch neue Projekte erfolgreich umzusetzen.
+          <ListContainer>
+            <ListItem> <span tw="text-blue-400">☁ Microsoft Azure</span><TextHighlighted></TextHighlighted></ListItem>
+          </ListContainer>
         </>
       )
     },
     {
       image: AgileIcon, title: "Agile", description: (
         <>
-          Seit mehreren Jahren arbeite ich in verschiedenen Rollen nach agilen Methodiken wie Scrum oder Kanban.
-          Meine Kenntnisse beweisen folgende Zertifikate:
+          Agiles Arbeiten schafft Transparenz und Flexibilität. Für ein modernes Projekt ist heutzutage ein agiles Vorgehen unabdingbar.
+          Seit mehreren Jahren arbeite ich also in verschiedenen Rollen nach agilen Methodiken wie SCRUM oder Kanban. Meine Kenntnisse beweisen folgende Zertifikate:
           <br />
           <ListContainer>
             <ListItem>
@@ -144,8 +154,8 @@ export default () => {
     {
       image: KnowhowIcon, title: "Know-How Transfer", description: (
         <>
-          Gerne gebe ich mein Wissen and die Mitarbeiter des Kunden weiter. Ich bevorzuge sowohl umfangreiche Formen des Wissenstransfer wie Workshops und Präsentationen,
-          als auch direkte wie Coaching und Mentoring.
+          Gerne gebe ich mein Wissen and die Mitarbeiter des Kunden weiter. Ich bevorzuge dabei sowohl umfangreiche Formen des Wissenstransfer wie Workshops und Präsentationen, als auch direkte wie Coaching und Mentoring.
+          Bei langfristigen Projekten kümmere ich mich als Lead Developer um die Einarbeitung neuer Teammitglieder.
         </>
       )
     }
