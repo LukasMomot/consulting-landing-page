@@ -5,7 +5,7 @@ import { Container, Content2Xl } from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
-import GitHubButton from "react-github-btn";
+// import GitHubButton from "react-github-btn";
 
 import { LogoLink } from "components/headers/light.js";
 import { SectionHeading as HeadingBase } from "components/misc/Headings";
@@ -78,14 +78,14 @@ export default () => {
                   Follow @TwitterDev
                 </a>
                 <div tw="mt-8">
-                  <GitHubButton
+                  {/* <GitHubButton
                     href="https://github.com/owaiswiz"
                     data-size="large"
                     data-show-count="true"
                     aria-label="Follow @owaiswiz on GitHub"
                   >
                     Follow @owaiswiz
-                  </GitHubButton>
+                  </GitHubButton> */}
                 </div>
               </div>
             </div>
