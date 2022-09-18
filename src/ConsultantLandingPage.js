@@ -21,23 +21,27 @@ import { ReactComponent as SearchIcon } from "feather-icons/dist/icons/search.sv
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+  const BuzzwordText = tw.span`text-primary-500 font-semibold`;
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`; //eslint-disable-line
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
   const yearsOfExp = new Date().getFullYear() - 2011;
   const descriptionText = `Seit mehr als ${yearsOfExp} Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur.`
 
+  function calculateCurrentProjects() {
+    const projectNumber = 13;
+    const projectYear = 2021;
+    const projectsPerYear = 1;
+    const projectBuffer = 1;
 
-  // Projects snapshot
-  const projectNumber = 13;
-  const projectYear = 2021;
-  const projectsPerYear = 1;
-  const projectBuffer = 1;
-  const currentProjects = projectNumber + ((new Date().getFullYear() - projectYear) * projectsPerYear) + projectBuffer;
+    return projectNumber + ((new Date().getFullYear() - projectYear) * projectsPerYear) + projectBuffer;
+  }
+
+  const currentProjects = calculateCurrentProjects();
 
   const stats = [
     {
-      key: "Erfolgreich realisierte Projekte",
+      key: "Erfolgreiche Kundenprojekte",
       value: `${currentProjects}+`,
     },
     {
@@ -74,8 +78,8 @@ export default () => {
       <section id="values">
         <Features
           subheading={<Subheading>Werte</Subheading>}
-          heading="We follow these."
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          heading="Meine Werte für Ihren Erfolg"
+          description="Ich stehe für technisches Know-How und Professionalität. Sie erhalten mit mir die besten Leistungen. Um diesen großen Qualitätsansprüchen gerecht zu werden, lebe ich folgende Werte: "
           cards={[
             {
               ImageSvg: TargetIcon,
@@ -100,7 +104,9 @@ export default () => {
         />
       </section>
       <section id="facts">
-        <Facts heading="Die Zahlen, die für mich sprechen" stats={stats}></Facts>
+        <Facts heading="Zahlen, die für mich sprechen"
+          description="Seit mehreren Jahren schaffe ich durch professionelle Beratung und Entwicklung innovativer Softwarelösungen Mehrwert für meine Kunden. Folgende Fakten sprechen für eine langfristige und erfolgreiche Zusammenarbeit mit mir."
+          stats={stats}></Facts>
       </section>
       <section id="contact">
         <Contact
@@ -113,14 +119,13 @@ export default () => {
           }
           description={
             <Description>
-              Möchten Sie mich als <strong>Technologiepartner</strong> and Ihrer Seite haben oder brauchen Sie Beratung, wie Sie Ihr Unternehmen digitaler machen?
+              Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> and Ihrer Seite haben oder brächten Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
               <br />
               <br />
-              Dann freue ich mich auf Ihre E-Mail.
-              Gemeinsam erschaffen wir moderne und innovative digitale Produkte.
+              Dann freue ich mich auf Ihre E-Mail. Gemeinsam erschaffen wir moderne und innovative digitale Produkte.
               <br />
               <br />
-              Eine vollständige Liste meiner Kompetenzen und Referenzen (Freelancermap.de Profil) finden Sie unter dem Link "Beraterprofil"
+              Eine vollständige Liste meiner Kompetenzen und Referenzen finden Sie unter dem Link <i>Beraterprofil</i>.
             </Description>
           }
           buttonRounded={false}
