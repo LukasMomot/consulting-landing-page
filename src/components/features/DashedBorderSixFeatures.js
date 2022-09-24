@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -8,23 +9,12 @@ import { SectionHeading } from "components/misc/Headings.js";
 import defaultCardImage from "../../images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
-
-// import SupportIconImage from "../../images/support-icon.svg";
-// import ShieldIconImage from "../../images/shield-icon.svg";
 import { ReactComponent as CodeIcon } from "feather-icons/dist/icons/code.svg"
 import { ReactComponent as CloudIcon } from "feather-icons/dist/icons/cloud.svg"
 import { ReactComponent as ArchitectureIcon } from "feather-icons/dist/icons/layers.svg"
 import { ReactComponent as MethodikIcon } from "feather-icons/dist/icons/check-square.svg"
 import { ReactComponent as AgileIcon } from "feather-icons/dist/icons/users.svg"
 import { ReactComponent as KnowhowIcon } from "feather-icons/dist/icons/clipboard.svg"
-
-
-// import CustomizeIconImage from "../../images/customize-icon.svg";
-// import FastIconImage from "../../images/fast-icon.svg";
-// import ReliableIconImage from "../../images/reliable-icon.svg";
-// import SimpleIconImage from "../../images/simple-icon.svg";
-
-// import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 const Container = tw.div`relative`;
 
@@ -55,7 +45,10 @@ const Card = styled.div`
   }
 
   .description {
-    ${tw`mt-3 font-semibold text-secondary-100 text-sm leading-relaxed text-justify`}
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    ${tw`mt-3 font-semibold text-secondary-100 text-sm leading-relaxed text-left break-words`}
   }
 `;
 
@@ -65,6 +58,8 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
+const ListContainer = tw.ul`flex flex-col items-start justify-start mt-2`;
+const ListItem = tw.li`mb-0.5`;
 export default () => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component):
@@ -91,28 +86,81 @@ export default () => {
     {
       image: CodeIcon,
       title: "Fullstack Softwareentwicklung",
-      description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+      description: (
+        <>
+          Leidenschaftlich implementiere ich komplexe Webprojekte sowohl im <TextHighlighted>Frontend</TextHighlighted> als auch im <TextHighlighted>Backend</TextHighlighted>.
+          Ich setze auf qualitative und innovative Softwareentwicklung unter Einhaltung von zahlreichen Best Practices.
+          <ListContainer>
+            <ListItem>✅ Clean Code</ListItem>
+            <ListItem>✅ Automatisierte Tests</ListItem>
+            <ListItem>✅ Continous Integration (CI/CD)</ListItem>
+            <ListItem>✅ SOLID</ListItem>
+            <ListItem>✅ und vieles mehr… </ListItem>
+          </ListContainer>
+        </>
+      )
     },
     {
       image: ArchitectureIcon, title: "Architektur", description: (<>
         Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
-        Beim Entwurf  lege ich großen Wert darauf, dass die Architektur  zukunftsfähig, modern aber vor allem gut an die Anforderungen angepasst sein sollte.
-        Nur eine pragmatische und maß-geschnittene hilf dem Unternehmen seine Ziele bestens zu erreichen.
-        <br/>
-        <br />
-        <TextHighlighted>🏆 iSAQB Certified Professional for Software Architecture</TextHighlighted>
+        Beim Entwurf der Software lege ich großen Wert darauf, dass die Architektur zukunftsfähig, modern und vor allem gut an die Anforderungen angepasst sein sollte. Nur eine <TextHighlighted>pragmatische und maßgeschneiderte Architektur</TextHighlighted> hilf dem Unternehmen seine Ziele bestens zu erreichen.
+        Meine Kompetenzen im diesen Bereich wurden mit dem iSAQB Zertifikat erfolgreich geprüft.
+        <ListContainer>
+          <ListItem><TextHighlighted>🏆 iSAQB Certified Professional for Software Architecture</TextHighlighted></ListItem>
+        </ListContainer>
       </>)
 
     },
     {
       image: MethodikIcon, title: "Methodik", description: (
         <>
-          We create and manage ads that you need, <br /> from <TextHighlighted> Hello World</TextHighlighted> creation to deployment. Lorem ipsum donor sit amet consicou.
+          Ein gutes und effizientes Team kann im Projekt viel erreichen. Die gängigen Methoden und Best Practices aus dem Bereich <TextHighlighted>Technical Leadership</TextHighlighted> helfen dabei den Projekterfolg zu sichern.
+          Ich unterstütze meine Kunden folgende Methoden im Projektalltag einzuführen.
+          <ListContainer>
+            <ListItem>✅ Technische Schulden beseitigen</ListItem>
+            <ListItem>✅ Anforderungsmanagement</ListItem>
+            <ListItem>✅ Durchführung von Code Reviews</ListItem>
+            <ListItem>✅ Pair- und Mob-Programming</ListItem>
+            <ListItem>✅ und vieles mehr… </ListItem>
+          </ListContainer>
         </>)
     },
-    { image: CloudIcon, title: "Cloud" },
-    { image: AgileIcon, title: "Agile" },
-    { image: KnowhowIcon, title: "Know-How Transfer" }
+    {
+      image: CloudIcon, title: "Cloud", description: (
+        <>
+          Moderne Cloud-basierte Systeme gehören der Zukunft an. Die Cloud bietet weitreichende Vorteile im Bereich: Skalierbarkeit, Performanz und "Time to Market". 
+          Meine ausgiebige Erfahrung im Bereich <TextHighlighted>Cloud Native</TextHighlighted> und <TextHighlighted>Serverless</TextHighlighted> hilft Ihnen sowohl die bestehende Legacy- Software zu modernisieren als auch neue Projekte erfolgreich umzusetzen.
+          <ListContainer>
+            <ListItem> <span tw="text-blue-400">☁ Microsoft Azure</span><TextHighlighted></TextHighlighted></ListItem>
+          </ListContainer>
+        </>
+      )
+    },
+    {
+      image: AgileIcon, title: "Agile", description: (
+        <>
+          Agiles Arbeiten schafft Transparenz und Flexibilität. Für ein modernes Projekt ist heutzutage ein agiles Vorgehen unabdingbar.
+          Seit mehreren Jahren arbeite ich also in verschiedenen Rollen nach agilen Methodiken wie <TextHighlighted>Scrum</TextHighlighted> oder <TextHighlighted>Kanban</TextHighlighted>. Meine Kenntnisse beweisen folgende Zertifikate:
+          <br />
+          <ListContainer>
+            <ListItem>
+              <TextHighlighted>🏆 Professional Scrum Master I</TextHighlighted>
+            </ListItem>
+            <ListItem>
+              <TextHighlighted>🏆 Scaled Professional Scrum</TextHighlighted>
+            </ListItem>
+          </ListContainer>
+        </>
+      )
+    },
+    {
+      image: KnowhowIcon, title: "Know-How Transfer", description: (
+        <>
+          Gerne gebe ich mein Wissen and die Mitarbeiter des Kunden weiter. Ich bevorzuge dabei sowohl umfangreiche Formen des Wissenstransfer wie <TextHighlighted>Workshops</TextHighlighted> und Präsentationen, als auch direkte wie Coaching und <TextHighlighted>Mentoring</TextHighlighted>.
+          Bei langfristigen Projekten kümmere ich mich als Lead Developer um die Einarbeitung neuer Teammitglieder.
+        </>
+      )
+    }
   ];
 
 
@@ -124,21 +172,19 @@ export default () => {
           <Column key={i}>
             <Card>
               <span className="imageContainer">
-                {/* <img src={card.imageSrc || defaultCardImage} alt="" /> */}
-                {/* <PriceIcon /> */}
                 {<card.image></card.image>}
               </span>
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
-                <p className="description">
+                <div className="description">
                   {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud. Sic Semper Tyrannis. Neoas Calie artel."}
-                </p>
+                </div>
               </span>
             </Card>
           </Column>
         ))}
       </ThreeColumnContainer>
-      <DecoratorBlob />
+      {/* <DecoratorBlob /> */}
     </Container>
   );
 };

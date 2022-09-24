@@ -1,12 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import {Container as ContainerBase } from "components/misc/Layouts.js"
+import { Container as ContainerBase } from "components/misc/Layouts.js"
 import logo from "../../images/logo_transparent.png";
-import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
-
 
 const Container = tw(ContainerBase)`bg-primary-500 text-gray-100 -mx-8 -mb-8`
 const Content = tw.div`max-w-screen-xl mx-auto py-8 lg:py-8`;
@@ -36,7 +33,7 @@ export default () => {
       <Content>
         <Row>
           <LogoContainer>
-            <LogoImg src={logo} />
+            <LogoImg src={logo} alt="logo" />
             {/* <LogoText>Treact</LogoText> */}
           </LogoContainer>
           <LinksContainer>
@@ -56,7 +53,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer> */}
           <CopyrightText>
-            &copy; { currentYear } Copyright Lukasz Momot
+            &copy; {currentYear} Copyright Lukasz Momot
           </CopyrightText>
         </Row>
       </Content>

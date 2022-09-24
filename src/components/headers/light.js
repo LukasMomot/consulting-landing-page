@@ -122,19 +122,22 @@ export default ({ roundedHeaderButton = false, useLinks = true, logoLink, links,
     <Header className={className || "header-light"}>
       <DesktopNavLinks css={collapseBreakpointCss.desktopNavLinks}>
         {logoLink}
-        { useLinks && links}
+        {useLinks && links}
       </DesktopNavLinks>
       {
-        // TODO: Bug here: menu disaperairng
-        useLinks &&
         <MobileNavLinksContainer css={collapseBreakpointCss.mobileNavLinksContainer}>
           {logoLink}
-          <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
-            {links}
-          </MobileNavLinks>
-          <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
-            {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
-          </NavToggle>
+          {useLinks &&
+            <>
+              <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
+                {links}
+              </MobileNavLinks>
+              <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
+                {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
+              </NavToggle>
+            </>
+          }
+
         </MobileNavLinksContainer>
       }
     </Header>

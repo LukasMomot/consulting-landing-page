@@ -7,7 +7,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { SecondaryButton as SecondaryButtonBase } from "components/misc/Buttons.js";
 
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
-import {ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
+import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
@@ -37,12 +37,12 @@ const Heading = tw(
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
-  tw`mt-8 w-44 md:mt-8 text-sm inline-block mx-auto md:mx-0 text-center`,
+  tw`mt-8 w-44 md:w-40 md:mt-8 text-sm inline-block mx-auto md:mx-0 text-center`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
 const SecondaryButton = styled(SecondaryButtonBase)(props => [
-  tw`mt-8 w-44 ml-3 md:mt-8 text-sm inline-block text-center`,
+  tw`mt-8 w-44 md:w-40 sm:ml-0 md:ml-3 md:mt-8 text-sm inline-block text-center`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
@@ -75,7 +75,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image css={imageCss} src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded}/>
+          <Image css={imageCss} src={imageSrc} alt="contact-image" imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
           {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
@@ -86,7 +86,7 @@ export default ({
             <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>
-            <SecondaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+            <SecondaryButton buttonRounded={buttonRounded} as="a" target="_blank" href={secondaryButtonUrl}>
               Beraterprofil
             </SecondaryButton>
           </TextContent>

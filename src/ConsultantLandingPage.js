@@ -6,18 +6,10 @@ import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";
 import Contact from "components/features/TwoColWithButton.js";
 import Facts from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
-import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
 import contactLogoSrc from "./images/consultant_contact.jpeg";
 
-import chefIconImageSrc from "images/chef-icon.svg";
-import celebrationIconImageSrc from "images/celebration-icon.svg";
-import shopIconImageSrc from "images/shop-icon.svg";
-
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomerLoveIconImage from "images/simple-icon.svg";
 import HeroImage from "./images/hero_image.jpeg";
 
 import { ReactComponent as TargetIcon } from "feather-icons/dist/icons/target.svg";
@@ -29,91 +21,92 @@ import { ReactComponent as SearchIcon } from "feather-icons/dist/icons/search.sv
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
-  const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
+  const BuzzwordText = tw.span`text-primary-500 font-semibold`;
+  const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`; //eslint-disable-line
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
   const yearsOfExp = new Date().getFullYear() - 2011;
   const descriptionText = `Seit mehr als ${yearsOfExp} Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur.`
+
+  function calculateCurrentProjects() {
+    const projectNumber = 13;
+    const projectYear = 2021;
+    const projectsPerYear = 1;
+    const projectBuffer = 1;
+
+    return projectNumber + ((new Date().getFullYear() - projectYear) * projectsPerYear) + projectBuffer;
+  }
+
+  const currentProjects = calculateCurrentProjects();
+
+  const stats = [
+    {
+      key: "Erfolgreiche Kundenprojekte",
+      value: `${currentProjects}+`,
+    },
+    {
+      key: "Jahre Erfahrung",
+      value: `${yearsOfExp}+`,
+    },
+    {
+      key: "IT Zertifikate",
+      value: "7+",
+    },
+  ]
   return (
-   
     <AnimationRevealPage>
       <Hero
-        heading={<>Lead Developer & Software Architect</>}
+        heading={<>Lead Developer & Software Architekt</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
-        description={descriptionText}
-        subDescription=".NET ⦁ NodeJS ⦁ Angular ⦁ React ⦁ Azure"
+        description={
+          <>
+            {descriptionText}
+          </>
+        }
+        subDescription=".NET ⦁ NodeJS ⦁ Azure Cloud ⦁ Angular ⦁ React"
         imageSrc={HeroImage}
-        // imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         imageCss={imageCss}
         imageDecoratorBlob={true}
         primaryButtonText="Kontakt aufnehmen"
         primaryButtonUrl="#contact"
-        // watchVideoButtonText="Meet The Chefs"
+
       />
       <section id="services">
         <Services></Services>
       </section>
 
-      {/* <Features
-        heading={
-          <>
-            Technische <HighlightedText>Skills.</HighlightedText>
-          </>
-        }
-        cards={[
-          {
-            imageSrc: shopIconImageSrc,
-            title: "230+ Locations",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "https://google.com",
-          },
-          {
-            imageSrc: chefIconImageSrc,
-            title: "Professional Chefs",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "https://timerse.com",
-          },
-          {
-            imageSrc: celebrationIconImageSrc,
-            title: "Birthday Catering",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "https://reddit.com",
-          },
-        ]}
-        imageContainerCss={tw`p-2!`}
-        imageCss={tw`w-20! h-20!`}
-      /> */}
-
       <section id="values">
         <Features
-          subheading={<Subheading>Our Values</Subheading>}
-          heading="We follow these."
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          subheading={<Subheading>Werte</Subheading>}
+          heading="Meine Werte für Ihren Erfolg"
+          description="Ich stehe für technisches Know-How und Professionalität. Sie erhalten mit mir die besten Leistungen. Um diesen großen Qualitätsansprüchen gerecht zu werden, lebe ich folgende Werte: "
           cards={[
             {
               ImageSvg: TargetIcon,
               title: "Pragmatismus",
               description:
-                "alle Aufgaben gehe ich lösungsorientiert und professionell an",
+                "Alle Aufgaben gehe ich lösungsorientiert und professionell an.",
             },
             {
               ImageSvg: StarIcon,
               title: "Innovation",
               description:
-                "mit den neusten Standards der Technik und Methodik entwickle ich qualitative Software",
+                "Mit den neusten Standards der Technik und Methodik entwickle ich qualitative Software.",
             },
             {
               ImageSvg: SearchIcon,
               title: "Transparenz",
               description:
-                "durch offenes und transparentes Handeln, baue ich das Vertrauen meiner Kunden auf",
+                "Durch offenes und transparentes Handeln, baue ich das Vertrauen meiner Kunden auf.",
             },
           ]}
           linkText=""
         />
       </section>
       <section id="facts">
-        <Facts></Facts>
+        <Facts heading="Zahlen, die für mich sprechen"
+          description="Seit mehreren Jahren schaffe ich durch professionelle Beratung und Entwicklung innovativer Softwarelösungen Mehrwert für meine Kunden. Folgende Fakten sprechen für eine langfristige und erfolgreiche Zusammenarbeit mit mir."
+          stats={stats}></Facts>
       </section>
       <section id="contact">
         <Contact
@@ -126,12 +119,13 @@ export default () => {
           }
           description={
             <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> and Ihrer Seite haben oder brächten Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
               <br />
               <br />
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Dann freue ich mich auf Ihre E-Mail. Gemeinsam erschaffen wir moderne und innovative digitale Produkte.
+              <br />
+              <br />
+              Eine vollständige Liste meiner Kompetenzen und Referenzen finden Sie unter dem Link <i>Beraterprofil</i>.
             </Description>
           }
           buttonRounded={false}
@@ -139,6 +133,7 @@ export default () => {
           primaryButtonText="Kontaktanfrage"
           // https://mailtolink.me/
           primaryButtonUrl="mailto:lukasz@momot-consulting.de?subject=Kontaktanfrage%20%C3%BCber%20Website"
+          secondaryButtonUrl="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/205415-profil-lukasz-momot-senior-full-stack-entwickler-software-architekt-net-nodejs-angular-react-typescript-c-.html"
           imageSrc={
             contactLogoSrc
           }
