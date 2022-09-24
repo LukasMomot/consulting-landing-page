@@ -95,7 +95,7 @@ export default () => {
             <ListItem>✅ Automatisierte Tests</ListItem>
             <ListItem>✅ Continous Integration (CI/CD)</ListItem>
             <ListItem>✅ SOLID</ListItem>
-            <ListItem>✅ und viel mehr… </ListItem>
+            <ListItem>✅ und vieles mehr… </ListItem>
           </ListContainer>
         </>
       )
@@ -103,8 +103,8 @@ export default () => {
     {
       image: ArchitectureIcon, title: "Architektur", description: (<>
         Eine gute Architektur ist ein wichtiger Erfolgsfaktor jedes Produkts.
-        Beim Entwurf der Software lege ich großen Wert darauf, dass die Architektur zukunftsfähig, modern und vor allem gut an die Anforderungen angepasst sein sollte. Nur eine pragmatische und maßgeschneiderte Architektur hilf dem Unternehmen seine Ziele bestens zu erreichen.
-        Meine Kompetenzen im diesen Bereich beweist das anerkannte Zertifikat.
+        Beim Entwurf der Software lege ich großen Wert darauf, dass die Architektur zukunftsfähig, modern und vor allem gut an die Anforderungen angepasst sein sollte. Nur eine <TextHighlighted>pragmatische und maßgeschneiderte Architektur</TextHighlighted> hilf dem Unternehmen seine Ziele bestens zu erreichen.
+        Meine Kompetenzen im diesen Bereich wurden mit dem iSAQB Zertifikat erfolgreich geprüft.
         <ListContainer>
           <ListItem><TextHighlighted>🏆 iSAQB Certified Professional for Software Architecture</TextHighlighted></ListItem>
         </ListContainer>
@@ -115,13 +115,13 @@ export default () => {
       image: MethodikIcon, title: "Methodik", description: (
         <>
           Ein gutes und effizientes Team kann im Projekt viel erreichen. Die gängigen Methoden und Best Practices aus dem Bereich <TextHighlighted>Technical Leadership</TextHighlighted> helfen dabei den Projekterfolg zu sichern.
-          Ich unterstütze meinen Kunden folgende Methoden im Projektalltag einzuführen.
+          Ich unterstütze meine Kunden folgende Methoden im Projektalltag einzuführen.
           <ListContainer>
             <ListItem>✅ Technische Schulden beseitigen</ListItem>
-            <ListItem>✅ Anforderungsmanagements</ListItem>
+            <ListItem>✅ Anforderungsmanagement</ListItem>
             <ListItem>✅ Durchführung von Code Reviews</ListItem>
             <ListItem>✅ Pair- und Mob-Programming</ListItem>
-            <ListItem>✅ und viel mehr… </ListItem>
+            <ListItem>✅ und vieles mehr… </ListItem>
           </ListContainer>
         </>)
     },
@@ -140,7 +140,7 @@ export default () => {
       image: AgileIcon, title: "Agile", description: (
         <>
           Agiles Arbeiten schafft Transparenz und Flexibilität. Für ein modernes Projekt ist heutzutage ein agiles Vorgehen unabdingbar.
-          Seit mehreren Jahren arbeite ich also in verschiedenen Rollen nach agilen Methodiken wie SCRUM oder Kanban. Meine Kenntnisse beweisen folgende Zertifikate:
+          Seit mehreren Jahren arbeite ich also in verschiedenen Rollen nach agilen Methodiken wie <TextHighlighted>Scrum</TextHighlighted> oder <TextHighlighted>Kanban</TextHighlighted>. Meine Kenntnisse beweisen folgende Zertifikate:
           <br />
           <ListContainer>
             <ListItem>
@@ -156,7 +156,7 @@ export default () => {
     {
       image: KnowhowIcon, title: "Know-How Transfer", description: (
         <>
-          Gerne gebe ich mein Wissen and die Mitarbeiter des Kunden weiter. Ich bevorzuge dabei sowohl umfangreiche Formen des Wissenstransfer wie Workshops und Präsentationen, als auch direkte wie Coaching und Mentoring.
+          Gerne gebe ich mein Wissen and die Mitarbeiter des Kunden weiter. Ich bevorzuge dabei sowohl umfangreiche Formen des Wissenstransfer wie <TextHighlighted>Workshops</TextHighlighted> und Präsentationen, als auch direkte wie Coaching und <TextHighlighted>Mentoring</TextHighlighted>.
           Bei langfristigen Projekten kümmere ich mich als Lead Developer um die Einarbeitung neuer Teammitglieder.
         </>
       )

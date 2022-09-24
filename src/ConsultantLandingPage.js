@@ -56,7 +56,7 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero
-        heading={<>Lead Developer & Software Architect</>}
+        heading={<>Lead Developer & Software Architekt</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
         description={
           <>
@@ -85,19 +85,19 @@ export default () => {
               ImageSvg: TargetIcon,
               title: "Pragmatismus",
               description:
-                "alle Aufgaben gehe ich lösungsorientiert und professionell an",
+                "Alle Aufgaben gehe ich lösungsorientiert und professionell an.",
             },
             {
               ImageSvg: StarIcon,
               title: "Innovation",
               description:
-                "mit den neusten Standards der Technik und Methodik entwickle ich qualitative Software",
+                "Mit den neusten Standards der Technik und Methodik entwickle ich qualitative Software.",
             },
             {
               ImageSvg: SearchIcon,
               title: "Transparenz",
               description:
-                "durch offenes und transparentes Handeln, baue ich das Vertrauen meiner Kunden auf",
+                "Durch offenes und transparentes Handeln, baue ich das Vertrauen meiner Kunden auf.",
             },
           ]}
           linkText=""
