@@ -45,7 +45,10 @@ const Card = styled.div`
   }
 
   .description {
-    ${tw`mt-3 font-semibold text-secondary-100 text-sm leading-relaxed text-justify`}
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    ${tw`mt-3 font-semibold text-secondary-100 text-sm leading-relaxed text-left break-words`}
   }
 `;
 
@@ -55,7 +58,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-const ListContainer = tw.ul`inline-block mt-2`;
+const ListContainer = tw.ul`flex flex-col items-start justify-start mt-2`;
 const ListItem = tw.li`mb-0.5`;
 export default () => {
   /*
@@ -125,8 +128,7 @@ export default () => {
     {
       image: CloudIcon, title: "Cloud", description: (
         <>
-          Moderne Cloud-basierte Systeme gehören der Zukunft an. Die Cloud bietet weitreichende Vorteile im Bereich: Skalierbarkeit, Performanz und "Time to Market".
-          <br />
+          Moderne Cloud-basierte Systeme gehören der Zukunft an. Die Cloud bietet weitreichende Vorteile im Bereich: Skalierbarkeit, Performanz und "Time to Market". 
           Meine ausgiebige Erfahrung im Bereich <TextHighlighted>Cloud Native</TextHighlighted> und <TextHighlighted>Serverless</TextHighlighted> hilft Ihnen sowohl die bestehende Legacy- Software zu modernisieren als auch neue Projekte erfolgreich umzusetzen.
           <ListContainer>
             <ListItem> <span tw="text-blue-400">☁ Microsoft Azure</span><TextHighlighted></TextHighlighted></ListItem>
