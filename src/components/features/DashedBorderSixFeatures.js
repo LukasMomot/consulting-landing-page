@@ -94,7 +94,7 @@ export default () => {
             <ListItem>✅ Clean Code</ListItem>
             <ListItem>✅ Automatisierte Tests</ListItem>
             <ListItem>✅ Continous Integration (CI/CD)</ListItem>
-            <ListItem>✅ SOLID</ListItem>
+            <ListItem>✅ SOLID, Design Patterns</ListItem>
             <ListItem>✅ und vieles mehr… </ListItem>
           </ListContainer>
         </>
