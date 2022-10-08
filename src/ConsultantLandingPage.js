@@ -24,6 +24,7 @@ export default () => {
   const BuzzwordText = tw.span`text-primary-500 font-semibold`;
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`; //eslint-disable-line
   const Description = tw.span`inline-block mt-8`;
+  const HighlightedInHeading = tw.span`text-primary-500`;
   const imageCss = tw`rounded-4xl`;
   const yearsOfExp = new Date().getFullYear() - 2011;
   const descriptionText = `Seit mehr als ${yearsOfExp} Jahren unterstütze ich namenhaften Kunden aus den diversen Branchen bei der Umsetzung von anspruchsvollen IT-Projekten. Meine Expertise liegt vor allem im Bereich: Webentwicklung und Softwarearchitektur.`
@@ -77,8 +78,8 @@ export default () => {
 
       <section id="values">
         <Features
-          subheading={<Subheading>Werte</Subheading>}
-          heading="Meine Werte für Ihren Erfolg"
+          // subheading={<Subheading>Werte</Subheading>}
+          heading={<>Meine Werte für  <HighlightedInHeading>Ihren Erfolg</HighlightedInHeading></> }
           description="Ich stehe für technisches Know-How und Professionalität. Sie erhalten mit mir die besten Leistungen. Um diesen großen Qualitätsansprüchen gerecht zu werden, lebe ich folgende Werte: "
           cards={[
             {
@@ -119,7 +120,7 @@ export default () => {
           }
           description={
             <Description>
-              Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> and Ihrer Seite haben oder benötigen Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
+              Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> an Ihrer Seite haben oder benötigen Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
               <br />
               <br />
               Dann freue ich mich auf Ihre E-Mail. Gemeinsam erschaffen wir moderne sowie innovative digitale Produkte.
