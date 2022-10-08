@@ -119,13 +119,13 @@ export default () => {
           }
           description={
             <Description>
-              Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> and Ihrer Seite haben oder brächten Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
+              Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> and Ihrer Seite haben oder benötigen Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
               <br />
               <br />
-              Dann freue ich mich auf Ihre E-Mail. Gemeinsam erschaffen wir moderne und innovative digitale Produkte.
+              Dann freue ich mich auf Ihre E-Mail. Gemeinsam erschaffen wir moderne sowie innovative digitale Produkte.
               <br />
               <br />
-              Eine vollständige Liste meiner Kompetenzen und Referenzen finden Sie unter dem Link <i>Beraterprofil</i>.
+              Eine vollständige Liste meiner Kompetenzen und Referenzen finden Sie unter folgendem Link <i>Beraterprofil</i>.
             </Description>
           }
           buttonRounded={false}
