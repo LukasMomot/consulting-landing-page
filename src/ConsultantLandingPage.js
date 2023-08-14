@@ -134,7 +134,7 @@ export default () => {
           primaryButtonText="Kontaktanfrage"
           // https://mailtolink.me/
           primaryButtonUrl="mailto:lukasz@momot-consulting.de?subject=Kontaktanfrage%20%C3%BCber%20Website"
-          secondaryButtonUrl="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/205415-profil-lukasz-momot-senior-full-stack-entwickler-software-architekt-net-nodejs-angular-react-typescript-c-.html"
+          secondaryButtonUrl="https://www.freelancermap.de/profil/lukasz-momot"
           imageSrc={
             contactLogoSrc
           }
