@@ -1231,6 +1231,11 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@fontsource/inter@^5.0.8":
+  "integrity" "sha512-28knWH1BfOiRalfLs90U4sge5mpQ8ZH6FS0PTT+IZMKrZ7wNHDHRuKa1kQJg+uHcc6axBppnxll+HXM4c7zo/Q=="
+  "resolved" "https://registry.npmjs.org/@fontsource/inter/-/inter-5.0.8.tgz"
+  "version" "5.0.8"
+
 "@fullhuman/postcss-purgecss@^3.1.3":
   "integrity" "sha512-kwOXw8fZ0Lt1QmeOOrd+o4Ibvp4UTEBFQbzvWldjlKv5n+G9sXfIPn1hh63IQIL8K8vbvv1oYMJiIUbuy9bGaA=="
   "resolved" "https://registry.npmjs.org/@fullhuman/postcss-purgecss/-/postcss-purgecss-3.1.3.tgz"
@@ -5550,11 +5555,6 @@
   dependencies:
     "assert-plus" "^1.0.0"
 
-"github-buttons@^2.8.0":
-  "integrity" "sha512-FLEOuag1v67p6GRtn8noL1QaanX0W4umg5tCjo1/l9qNCWX9BXXocjkVlSu7Nm0u+aH15wxsAzFlFRQcGsNrXw=="
-  "resolved" "https://registry.npmjs.org/github-buttons/-/github-buttons-2.10.1.tgz"
-  "version" "2.10.1"
-
 "glob-base@^0.3.0":
   "integrity" "sha1-27Fk9iIbHAscz4Kuoyi0l98Oo8Q="
   "resolved" "https://registry.npmjs.org/glob-base/-/glob-base-0.3.0.tgz"
@@ -9853,13 +9853,6 @@
   "integrity" "sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew=="
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   "version" "6.0.9"
-
-"react-github-btn@^1.2.0":
-  "integrity" "sha512-/b2TGTeek5Ky+KtuP5BxOaXgb1FGhbwgZNI6rkwkGk7+xtCtsNMkdchOcCnC3qU1JGTWPKzYZWpPBIouVhXAoQ=="
-  "resolved" "https://registry.npmjs.org/react-github-btn/-/react-github-btn-1.2.0.tgz"
-  "version" "1.2.0"
-  dependencies:
-    "github-buttons" "^2.8.0"
 
 "react-is@^16.6.0":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
