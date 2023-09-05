@@ -55,7 +55,7 @@ export default () => {
     },
   ]
   return (
-    <AnimationRevealPage>
+    <AnimationRevealPage omitFirstAnimation={true} >
       <Hero
         heading={<>Lead Developer & Software Architekt</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
