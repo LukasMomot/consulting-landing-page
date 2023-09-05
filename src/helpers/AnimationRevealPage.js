@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import useInView from "@owaiswiz/use-in-view";
 
 const StyledDiv = tw.div`font-display min-h-screen text-secondary-500 p-8 overflow-hidden`;
-function AnimationReveal({ disabled, children, omitFirstAnimation = false }) {
+function AnimationReveal({ disabled, children, omitFirstAnimation = false, omitLastAnimation = false }) {
   if (disabled) {
     return <>{children}</>;
   }
@@ -17,14 +17,18 @@ function AnimationReveal({ disabled, children, omitFirstAnimation = false }) {
   }
 
   let firstComponent;
+  let lastComponent;
   if (omitFirstAnimation) {
     const [firstTemp, ...restOfChildren] = children;
     firstComponent = firstTemp;
     children = [...restOfChildren];
   }
 
-
-  // TODO: Consider omitting last animation as well?
+  if (omitLastAnimation) {
+    const [...restOfChildren] = children;
+    lastComponent = restOfChildren.pop();
+    children = [...restOfChildren];
+  }
 
   const directions = ["left", "right"];
   let childrenWithAnimation = children.map((child, i) => {
@@ -36,6 +40,7 @@ function AnimationReveal({ disabled, children, omitFirstAnimation = false }) {
   });
 
   childrenWithAnimation = omitFirstAnimation ? [firstComponent, ...childrenWithAnimation] : childrenWithAnimation;
+  childrenWithAnimation = omitLastAnimation ? [...childrenWithAnimation, lastComponent] : childrenWithAnimation;
   return <>{childrenWithAnimation}</>;
 }
 
