@@ -349,7 +349,7 @@ const modes = {
 export default ({ headingText = "Impressum", mode = "impressum" }) => {
   const { header, text } = modes[mode];
   return (
-    <AnimationRevealPage>
+    <AnimationRevealPage disabled={true}>
       <Header useLinks={false} logoLink={Logo} />
       <Container>
         <ContentWithPaddingXl>

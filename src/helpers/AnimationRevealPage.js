@@ -23,6 +23,9 @@ function AnimationReveal({ disabled, children, omitFirstAnimation = false }) {
     children = [...restOfChildren];
   }
 
+
+  // TODO: Consider omitting last animation as well?
+
   const directions = ["left", "right"];
   let childrenWithAnimation = children.map((child, i) => {
     return (
