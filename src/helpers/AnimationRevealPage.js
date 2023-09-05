@@ -7,21 +7,40 @@ import { motion } from "framer-motion";
 import useInView from "@owaiswiz/use-in-view";
 
 const StyledDiv = tw.div`font-display min-h-screen text-secondary-500 p-8 overflow-hidden`;
-function AnimationReveal({ disabled, children }) {
+function AnimationReveal({ disabled, children, omitFirstAnimation = false, omitLastAnimation = false }) {
   if (disabled) {
     return <>{children}</>;
   }
 
-  if (!Array.isArray(children)) children = [children];
+  if (!Array.isArray(children)) {
+    children = [children];
+  }
+
+  let firstComponent;
+  let lastComponent;
+  if (omitFirstAnimation) {
+    const [firstTemp, ...restOfChildren] = children;
+    firstComponent = firstTemp;
+    children = [...restOfChildren];
+  }
+
+  if (omitLastAnimation) {
+    const [...restOfChildren] = children;
+    lastComponent = restOfChildren.pop();
+    children = [...restOfChildren];
+  }
 
   const directions = ["left", "right"];
-  const childrenWithAnimation = children.map((child, i) => {
+  let childrenWithAnimation = children.map((child, i) => {
     return (
       <AnimatedSlideInComponent key={i} direction={directions[i % directions.length]}>
         {child}
       </AnimatedSlideInComponent>
     );
   });
+
+  childrenWithAnimation = omitFirstAnimation ? [firstComponent, ...childrenWithAnimation] : childrenWithAnimation;
+  childrenWithAnimation = omitLastAnimation ? [...childrenWithAnimation, lastComponent] : childrenWithAnimation;
   return <>{childrenWithAnimation}</>;
 }
 
