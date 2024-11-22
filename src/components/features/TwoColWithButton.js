@@ -5,6 +5,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { SecondaryButton as SecondaryButtonBase } from "components/misc/Buttons.js";
+import { ReactComponent as LinkedInIcon } from "feather-icons/dist/icons/linkedin.svg"; // Update LinkedIn icon import
 
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
@@ -46,6 +47,13 @@ const SecondaryButton = styled(SecondaryButtonBase)(props => [
   props.buttonRounded && tw`rounded-full`
 ]);
 
+const ButtonContainer = tw.div`flex flex-col sm:flex-row justify-center md:justify-start items-center`;
+
+const LinkedInButton = styled(SecondaryButtonBase)(props => [
+  tw`mt-8 w-44 h-11/12 md:w-40 sm:ml-0 md:ml-3 md:mt-8 text-sm inline-block text-center bg-blue-700 text-white flex items-center justify-center`,
+  { height: '45px' },
+  props.buttonRounded && tw`rounded-full`
+]);
 
 export default ({
   subheading = "Our Expertise",
@@ -59,6 +67,7 @@ export default ({
   secondaryButtonText = null,
   secondaryButtonUrl = null,
   primaryButtonUrl = "https://timerse.com",
+  linkedinButtonUrl = "https://www.linkedin.com/in/lukasz-momot",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
@@ -83,12 +92,17 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
-              {primaryButtonText}
-            </PrimaryButton>
-            <SecondaryButton buttonRounded={buttonRounded} as="a" target="_blank" href={secondaryButtonUrl}>
-              Beraterprofil
-            </SecondaryButton>
+            <ButtonContainer>
+              <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+                {primaryButtonText}
+              </PrimaryButton>
+              <LinkedInButton buttonRounded={buttonRounded} as="a" href={linkedinButtonUrl} target="_blank">
+                <LinkedInIcon tw="mr-2" /> Profil
+              </LinkedInButton>
+              <SecondaryButton buttonRounded={buttonRounded} as="a" target="_blank" href={secondaryButtonUrl}>
+                Beraterprofil
+              </SecondaryButton>
+            </ButtonContainer>
           </TextContent>
         </TextColumn>
       </TwoColumn>
