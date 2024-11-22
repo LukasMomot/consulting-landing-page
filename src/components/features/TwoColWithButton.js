@@ -67,7 +67,7 @@ export default ({
   secondaryButtonText = null,
   secondaryButtonUrl = null,
   primaryButtonUrl = "https://timerse.com",
-  linkedinButtonUrl = "https://www.linkedin.com/in/your-profile",
+  linkedinButtonUrl = "https://www.linkedin.com/in/lukasz-momot",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
