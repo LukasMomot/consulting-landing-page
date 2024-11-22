@@ -47,10 +47,11 @@ const SecondaryButton = styled(SecondaryButtonBase)(props => [
   props.buttonRounded && tw`rounded-full`
 ]);
 
-const ButtonContainer = tw.div`mt-8 flex flex-col sm:flex-row justify-center md:justify-start items-center`;
+const ButtonContainer = tw.div`flex flex-col sm:flex-row justify-center md:justify-start items-center`;
 
 const LinkedInButton = styled(SecondaryButtonBase)(props => [
-  tw`mt-8 w-44 md:w-40 sm:ml-0 md:ml-3 md:mt-8 text-sm inline-block text-center bg-blue-700 text-white flex items-center justify-center`,
+  tw`mt-8 h-btn w-44 h-11/12 md:w-40 sm:ml-0 md:ml-3 md:mt-8 text-sm inline-block text-center bg-blue-700 text-white flex items-center justify-center`,
+  { height: '45px' },
   props.buttonRounded && tw`rounded-full`
 ]);
 

@@ -78,8 +78,7 @@ export default () => {
 
       <section id="values">
         <Features
-          // subheading={<Subheading>Werte</Subheading>}
-          heading={<>Meine Werte für  <HighlightedInHeading>Ihren Erfolg</HighlightedInHeading></> }
+          heading={<>Meine Werte für  <HighlightedInHeading>Ihren Erfolg</HighlightedInHeading></>}
           description="Ich stehe für technisches Know-How und Professionalität. Sie erhalten mit mir die besten Leistungen. Um diesen großen Qualitätsansprüchen gerecht zu werden, lebe ich folgende Werte: "
           cards={[
             {
@@ -123,10 +122,7 @@ export default () => {
               Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> an Ihrer Seite haben oder benötigen Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
               <br />
               <br />
-              Dann freue ich mich auf Ihre E-Mail. Gemeinsam erschaffen wir moderne sowie innovative digitale Produkte.
-              <br />
-              <br />
-              Eine vollständige Liste meiner Kompetenzen und Referenzen finden Sie unter folgendem Link <i>Beraterprofil</i>.
+              Dann freue ich mich auf Ihre Nachricht. Gemeinsam erschaffen wir moderne sowie innovative digitale Produkte.
             </Description>
           }
           buttonRounded={false}
