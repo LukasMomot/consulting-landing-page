@@ -65,7 +65,7 @@ export default () => {
             {descriptionText}
           </>
         }
-        subDescription=".NET ⦁ NodeJS ⦁ Azure Cloud ⦁ Angular ⦁ React"
+        subDescription=".NET ⦁ Azure Cloud ⦁ Angular ⦁  NodeJS"
         imageSrc={HeroImage}
         imageCss={imageCss}
         imageDecoratorBlob={true}
