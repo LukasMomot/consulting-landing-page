@@ -34,8 +34,9 @@ export default () => {
     const projectYear = 2021;
     const projectsPerYear = 1;
     const projectBuffer = 1;
+    const offeset = 1;
 
-    return projectNumber + ((new Date().getFullYear() - projectYear) * projectsPerYear) + projectBuffer;
+    return projectNumber + ((new Date().getFullYear() - projectYear) * projectsPerYear) + projectBuffer - offeset;
   }
 
   const currentProjects = calculateCurrentProjects();
