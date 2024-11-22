@@ -95,7 +95,7 @@ export default ({
               <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
                 {primaryButtonText}
               </PrimaryButton>
-              <LinkedInButton buttonRounded={buttonRounded} href={linkedinButtonUrl} target="_blank">
+              <LinkedInButton buttonRounded={buttonRounded} as="a" href={linkedinButtonUrl} target="_blank">
                 <LinkedInIcon tw="mr-2" /> Profil
               </LinkedInButton>
               <SecondaryButton buttonRounded={buttonRounded} as="a" target="_blank" href={secondaryButtonUrl}>
