@@ -77,7 +77,11 @@ export default () => {
       <section id="services">
         <Services></Services>
       </section>
-      <Funnel />
+      <Funnel
+        url="https://lukasz-5.kit.com/874754c3c3/index.js"
+        formId="874754c3c3"
+        displayMs={5000}
+      />
 
       <section id="values">
         <Features

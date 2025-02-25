@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 
-const Funnel = () => {
+const Funnel = ({ url, formId, displayMs }) => {
     useEffect(() => {
         const formContainer = document.querySelector('.convertkit-form');
         if (formContainer) {
             const script = document.createElement('script');
-            script.src = "https://lukasz-5.kit.com/874754c3c3/index.js";
+            script.src = url;
             script.async = true;
-            script.setAttribute('data-uid', '874754c3c3');
+            script.setAttribute('data-uid', formId);
             formContainer.appendChild(script);
 
             // Check if the form is visible
@@ -19,23 +19,24 @@ const Funnel = () => {
                 } else {
                     console.error('Form not found inside the container');
                 }
-                // Simulate click after 5 seconds
-                const link = document.querySelector('[data-formkit-toggle="874754c3c3"]');
+                // Simulate click after specified milliseconds
+                const link = document.querySelector(`[data-formkit-toggle="${formId}"]`);
                 if (link) {
                     setTimeout(() => {
                         link.click(); // Simulate click
-                    }, 5000);
+                    }, displayMs);
                 }
             };
         } else {
             console.error('ConvertKit form container not found');
         }
-    }, []);
+    }, [url, formId, displayMs]);
+
     return (
         <div>
             {/* ...existing code... */}
             <div className="convertkit-form"></div>
-            <a style={{ display: 'none' }} data-formkit-toggle="874754c3c3" href="https://lukasz-5.kit.com/874754c3c3">Your link text</a>
+            <a style={{ display: 'none' }} data-formkit-toggle={formId} href={url}>Your link text</a>
         </div>
     );
 };
