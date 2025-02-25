@@ -58,7 +58,6 @@ export default () => {
   ]
   return (
     <AnimationRevealPage omitFirstAnimation={true} omitLastAnimation={true} >
-      <Funnel />
       <Hero
         heading={<>Lead Developer & Software Architekt</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
@@ -78,6 +77,7 @@ export default () => {
       <section id="services">
         <Services></Services>
       </section>
+      <Funnel />
 
       <section id="values">
         <Features

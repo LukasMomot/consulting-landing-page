@@ -5,9 +5,9 @@ const Funnel = () => {
         const formContainer = document.querySelector('.convertkit-form');
         if (formContainer) {
             const script = document.createElement('script');
-            script.src = "https://lukasz-5.kit.com/a9e40a47d4/index.js";
+            script.src = "https://lukasz-5.kit.com/874754c3c3/index.js";
             script.async = true;
-            script.setAttribute('data-uid', 'a9e40a47d4');
+            script.setAttribute('data-uid', '874754c3c3');
             formContainer.appendChild(script);
 
             // Check if the form is visible
@@ -28,6 +28,7 @@ const Funnel = () => {
         <div>
             {/* ...existing code... */}
             <div className="convertkit-form"></div>
+            <a data-formkit-toggle="874754c3c3" href="https://lukasz-5.kit.com/874754c3c3">Your link text</a>
         </div>
     );
 };
