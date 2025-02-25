@@ -15,6 +15,7 @@ import HeroImage from "./images/hero_image.jpeg";
 import { ReactComponent as TargetIcon } from "feather-icons/dist/icons/target.svg";
 import { ReactComponent as StarIcon } from "feather-icons/dist/icons/star.svg";
 import { ReactComponent as SearchIcon } from "feather-icons/dist/icons/search.svg";
+import Funnel from "Funnel";
 
 
 
@@ -57,6 +58,7 @@ export default () => {
   ]
   return (
     <AnimationRevealPage omitFirstAnimation={true} omitLastAnimation={true} >
+      <Funnel />
       <Hero
         heading={<>Lead Developer & Software Architekt</>}
         headingSecond={<HighlightedText>Lukasz Momot</HighlightedText>}
