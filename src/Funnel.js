@@ -19,6 +19,13 @@ const Funnel = () => {
                 } else {
                     console.error('Form not found inside the container');
                 }
+                // Simulate click after 5 seconds
+                const link = document.querySelector('[data-formkit-toggle="874754c3c3"]');
+                if (link) {
+                    setTimeout(() => {
+                        link.click(); // Simulate click
+                    }, 5000);
+                }
             };
         } else {
             console.error('ConvertKit form container not found');
@@ -28,7 +35,7 @@ const Funnel = () => {
         <div>
             {/* ...existing code... */}
             <div className="convertkit-form"></div>
-            <a data-formkit-toggle="874754c3c3" href="https://lukasz-5.kit.com/874754c3c3">Your link text</a>
+            <a style={{ display: 'none' }} data-formkit-toggle="874754c3c3" href="https://lukasz-5.kit.com/874754c3c3">Your link text</a>
         </div>
     );
 };
