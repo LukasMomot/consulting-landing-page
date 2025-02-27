@@ -44,7 +44,7 @@ export const FunnelLinkRaw = tw.a`
 
 const FunnelLinkRawComponent = () => (
   <FunnelLinkRaw data-formkit-toggle={funnelConfig.formkitId} href={funnelConfig.url}>
-    Blueprint kostenlos 🚀
+    ⭐ Wissenstranfer BLUEPRINT ⭐
   </FunnelLinkRaw>
 );
 
