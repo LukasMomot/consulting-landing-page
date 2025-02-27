@@ -43,7 +43,7 @@ export const FunnelLinkRaw = tw.a`
 
 const FunnelLinkRawComponent = () => (
   <FunnelLinkRaw data-formkit-toggle="874754c3c3" href="https://lukasz-5.kit.com/874754c3c3/index.js">
-    Funnel ROKET
+    Blueprint kostenlos 🚀
   </FunnelLinkRaw>
 );
 
