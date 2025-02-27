@@ -35,10 +35,16 @@ export const PrimaryLink = tw(NavLink)`
   border-b-0
 `;
 
-export const FunnelLinkRaw = () => (
-  <a data-formkit-toggle="874754c3c3" href="https://lukasz-5.kit.com/874754c3c3/index.js">
+export const FunnelLinkRaw = tw.a`
+  text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+  font-semibold tracking-wide transition duration-300
+  pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
+`;
+
+const FunnelLinkRawComponent = () => (
+  <FunnelLinkRaw data-formkit-toggle="874754c3c3" href="https://lukasz-5.kit.com/874754c3c3/index.js">
     Funnel ROKET
-  </a>
+  </FunnelLinkRaw>
 );
 
 export const FunnelLink = tw(FunnelLinkRaw)`
@@ -103,7 +109,7 @@ export default ({ roundedHeaderButton = false, useLinks = true, logoLink, links,
       <NavLink href="#values">Werte</NavLink>
       {/* <NavLink href="/#">Pricing</NavLink> */}
       <NavLink href="#contact">Kontakt</NavLink>
-      <FunnelLink></FunnelLink>
+      <FunnelLinkRawComponent />
       {/* <NavLink href="/#" tw="lg:ml-12!">
         Login
       </NavLink> */}
