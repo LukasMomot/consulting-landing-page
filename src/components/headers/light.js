@@ -6,6 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
+import funnelConfig from "../../funnelConfig";
 
 import logoTemplate from "../../images/logo.svg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
@@ -42,7 +43,7 @@ export const FunnelLinkRaw = tw.a`
 `;
 
 const FunnelLinkRawComponent = () => (
-  <FunnelLinkRaw data-formkit-toggle="874754c3c3" href="https://lukasz-5.kit.com/874754c3c3/index.js">
+  <FunnelLinkRaw data-formkit-toggle={funnelConfig.formkitId} href={funnelConfig.url}>
     Blueprint kostenlos 🚀
   </FunnelLinkRaw>
 );

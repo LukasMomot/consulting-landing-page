@@ -9,6 +9,7 @@ import Facts from "components/features/ThreeColCenteredStatsPrimaryBackground.js
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
 import contactLogoSrc from "./images/consultant_contact.jpeg";
+import funnelConfig from "./funnelConfig";
 
 import HeroImage from "./images/hero_image.jpeg";
 
@@ -78,8 +79,8 @@ export default () => {
         <Services></Services>
       </section>
       <Funnel
-        url="https://lukasz-5.kit.com/874754c3c3/index.js"
-        formId="874754c3c3"
+        url={funnelConfig.url}
+        formId={funnelConfig.formkitId}
         displayMs={5000}
       />
 
