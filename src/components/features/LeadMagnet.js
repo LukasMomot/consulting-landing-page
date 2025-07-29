@@ -11,7 +11,7 @@ import TeamIllustrationSrc from "images/team-illustration-2.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
+const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto pb-10 md:pb-12 items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)(props => [
@@ -38,7 +38,7 @@ const Heading = tw(
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base font-medium leading-relaxed text-secondary-100`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
-  tw`mt-8 w-44 md:w-40 md:mt-8 text-sm inline-block mx-auto md:mx-0 text-center`,
+  tw`mt-8 w-56 md:w-48 md:mt-8 text-sm inline-block mx-auto md:mx-0 text-center`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
@@ -96,12 +96,7 @@ export default ({
               <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
                 {primaryButtonText}
               </PrimaryButton>
-              <LinkedInButton buttonRounded={buttonRounded} as="a" href={linkedinButtonUrl} target="_blank">
-                <LinkedInIcon tw="mr-2" /> Profil
-              </LinkedInButton>
-              <SecondaryButton buttonRounded={buttonRounded} as="a" target="_blank" href={secondaryButtonUrl}>
-                Beraterprofil
-              </SecondaryButton>
+
             </ButtonContainer>
           </TextContent>
         </TextColumn>

@@ -5,13 +5,14 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";
 import Contact from "components/features/TwoColWithButton.js";
-import LeadMaget from "components/features/TwoColWithButton.js";
+import LeadMaget from "components/features/LeadMagnet.js";
 import Facts from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
 import contactLogoSrc from "./images/consultant_contact.jpeg";
 
 import HeroImage from "./images/hero_image.jpeg";
+import LeadImage from "./images/lead.jpg";
 
 import { ReactComponent as TargetIcon } from "feather-icons/dist/icons/target.svg";
 import { ReactComponent as StarIcon } from "feather-icons/dist/icons/star.svg";
@@ -107,11 +108,11 @@ export default () => {
       </section>
       <section id="magnet">
         <LeadMaget
-          subheading={<Subheading>Kontakt</Subheading>}
+          subheading={<Subheading>🎁 Gratis PDF</Subheading>}
           heading={
             <>
-              Intresse
-              <wbr /> <HighlightedText>geweckt?</HighlightedText>
+              Wissen
+              <wbr /> <HighlightedText>clever</HighlightedText> teilen
             </>
           }
           description={
@@ -124,12 +125,12 @@ export default () => {
           }
           buttonRounded={false}
           textOnLeft={false}
-          primaryButtonText="Kontaktanfrage"
+          primaryButtonText="👉 Zur Download"
           // https://mailtolink.me/
-          primaryButtonUrl="mailto:lukasz@momot-consulting.de?subject=Kontaktanfrage%20%C3%BCber%20Website"
+          primaryButtonUrl="https://wissen.momot-consulting.de/"
           secondaryButtonUrl="https://www.freelancermap.de/profil/lukasz-momot"
           imageSrc={
-            contactLogoSrc
+            LeadImage
           }
           imageCss={imageCss}
           imageDecoratorBlob={true}
