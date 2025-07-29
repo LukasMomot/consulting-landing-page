@@ -5,6 +5,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";
 import Contact from "components/features/TwoColWithButton.js";
+import LeadMaget from "components/features/TwoColWithButton.js";
 import Facts from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
@@ -102,6 +103,37 @@ export default () => {
             },
           ]}
           linkText=""
+        />
+      </section>
+      <section id="magnet">
+        <LeadMaget
+          subheading={<Subheading>Kontakt</Subheading>}
+          heading={
+            <>
+              Intresse
+              <wbr /> <HighlightedText>geweckt?</HighlightedText>
+            </>
+          }
+          description={
+            <Description>
+              Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> an Ihrer Seite haben oder benötigen Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
+              <br />
+              <br />
+              Dann freue ich mich auf Ihre Nachricht. Gemeinsam erschaffen wir moderne sowie innovative digitale Produkte.
+            </Description>
+          }
+          buttonRounded={false}
+          textOnLeft={false}
+          primaryButtonText="Kontaktanfrage"
+          // https://mailtolink.me/
+          primaryButtonUrl="mailto:lukasz@momot-consulting.de?subject=Kontaktanfrage%20%C3%BCber%20Website"
+          secondaryButtonUrl="https://www.freelancermap.de/profil/lukasz-momot"
+          imageSrc={
+            contactLogoSrc
+          }
+          imageCss={imageCss}
+          imageDecoratorBlob={true}
+          imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
         />
       </section>
       <section id="facts">
