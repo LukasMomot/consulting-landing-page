@@ -264,10 +264,10 @@ const modes = {
               Datenschutzerklärung: <a href="https://convertkit.com/privacy" rel="noreferrer">https://convertkit.com/privacy</a>
             </p>
             <p>
-              <strong>Verarbeitete Daten:</strong> E-Mail-Adresse, Vorname (optional), IP-Adresse, Zeitstempel der Eintragung, ggf. weitere im Formular abgefragte Felder<br />
-              <strong>Verarbeitungszweck:</strong> Versand von Newslettern und automatisierten E-Mails, Bereitstellung des angeforderten PDF-Downloads<br />
-              <strong>Rechtsgrundlage:</strong> Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)<br />
-              <strong>Widerrufshinweis:</strong> Sie können Ihre Einwilligung jederzeit über den Abmeldelink in jeder E-Mail oder per Nachricht an lukasz@momot-consulting.de widerrufen.
+              Verarbeitete Daten: E-Mail-Adresse, Vorname (optional), IP-Adresse, Zeitstempel der Eintragung, ggf. weitere im Formular abgefragte Felder<br />
+              Verarbeitungszweck: Versand von Newslettern und automatisierten E-Mails, Bereitstellung des angeforderten PDF-Downloads<br />
+              Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)<br />
+              Widerrufshinweis: Sie können Ihre Einwilligung jederzeit über den Abmeldelink in jeder E-Mail oder per Nachricht an lukasz@momot-consulting.de widerrufen.
             </p>
           </div>
         </div>
