@@ -128,7 +128,7 @@ export default () => {
           }
           buttonRounded={false}
           textOnLeft={false}
-          primaryButtonText="👉 Zur Download"
+          primaryButtonText="👉 PDF sichern"
           // https://mailtolink.me/
           primaryButtonUrl="https://wissen.momot-consulting.de/"
           secondaryButtonUrl="https://www.freelancermap.de/profil/lukasz-momot"
