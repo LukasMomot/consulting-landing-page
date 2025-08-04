@@ -117,10 +117,13 @@ export default () => {
           }
           description={
             <Description>
-              Möchten Sie mich als <BuzzwordText>Technologiepartner</BuzzwordText> an Ihrer Seite haben oder benötigen Sie Beratung bezüglich der <BuzzwordText>Digitalisierung</BuzzwordText> Ihres Unternehmens?
+              Kennen Sie das? Wissen ist im Team vorhanden – aber niemand findet es, wenn es wirklich gebraucht wird.
               <br />
               <br />
-              Dann freue ich mich auf Ihre Nachricht. Gemeinsam erschaffen wir moderne sowie innovative digitale Produkte.
+              <BuzzwordText>Was Sie erwartet:</BuzzwordText>
+              <br />
+              Dieser Blueprint zeigt Ihnen, wie Sie Wissenssilos aufbrechen, Abläufe vereinfachen und Ihre Teams effizienter machen – mit klaren Formaten und erprobten Methoden aus der Projektpraxis.
+
             </Description>
           }
           buttonRounded={false}
