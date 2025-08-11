@@ -255,6 +255,7 @@ const modes = {
                 href="https://cloud.google.com/"
                 rel="noreferrer">https://cloud.google.com/</a><br />Datenschutzerklärung:
               <a href="https://www.google.com/policies/privacy" rel="noreferrer">https://www.google.com/policies/privacy</a></p>
+            <p>Die Übermittlung Ihrer Daten in die USA erfolgt auf Grundlage der Standardvertragsklauseln (SCC) der EU-Kommission.</p>
           </div>
           <div>
             <p><strong>ConvertKit (E-Mail-Marketing- und Automatisierungsdienst)</strong></p>
@@ -268,6 +269,9 @@ const modes = {
               Verarbeitungszweck: Versand von Newslettern und automatisierten E-Mails, Bereitstellung des angeforderten PDF-Downloads<br />
               Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)<br />
               Widerrufshinweis: Sie können Ihre Einwilligung jederzeit über den Abmeldelink in jeder E-Mail oder per Nachricht an lukasz@momot-consulting.de widerrufen.
+            </p>
+            <p>
+              Der Versand erfolgt ausschließlich nach Ihrer ausdrücklichen Einwilligung im Rahmen eines Double-Opt-In-Verfahrens. Die Übermittlung Ihrer Daten in die USA erfolgt auf Grundlage der Standardvertragsklauseln (SCC) der EU-Kommission, um ein angemessenes Datenschutzniveau sicherzustellen
             </p>
           </div>
         </div>
@@ -349,7 +353,7 @@ const modes = {
               Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter
               zu schützen.</p>
             <h2>Aktualität und Änderung dieser Datenschutzerklärung</h2>
-            <p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand September 2022. Aufgrund geänderter
+            <p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand August 2025. Aufgrund geänderter
               gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung anzupassen.</p>
             <p><strong>Diese Datenschutzerklärung wurde mit Hilfe des Datenschutz-Generators von SOS Recht erstellt. SOS
               Recht ist ein Angebot der Mueller.legal Rechtsanwälte Partnerschaft mit Sitz in Berlin.</strong></p>
