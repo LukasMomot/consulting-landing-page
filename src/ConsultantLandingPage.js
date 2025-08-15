@@ -108,7 +108,7 @@ export default () => {
       </section>
       <section id="magnet">
         <LeadMaget
-          subheading={<Subheading>🎁 Gratis PDF</Subheading>}
+          subheading={<Subheading>Gratis PDF</Subheading>}
           heading={
             <>
               Wissen
@@ -120,7 +120,7 @@ export default () => {
               Kennen Sie das? Wissen ist im Team vorhanden – aber niemand findet es, wenn es wirklich gebraucht wird.
               <br />
               <br />
-              <BuzzwordText>Was Sie erwartet:</BuzzwordText>
+              <BuzzwordText>Was Sie in diesem PDF erwartet:</BuzzwordText>
               <br />
               Dieser Blueprint zeigt Ihnen, wie Sie Wissenssilos aufbrechen, Abläufe vereinfachen und Ihre Teams effizienter machen – mit klaren Formaten und erprobten Methoden aus der Projektpraxis.
 
