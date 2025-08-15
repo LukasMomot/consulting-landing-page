@@ -12,7 +12,7 @@ import Services from "components/features/DashedBorderSixFeatures";
 import contactLogoSrc from "./images/consultant_contact.jpeg";
 
 import HeroImage from "./images/hero_image.jpeg";
-import LeadImage from "./images/lead.jpg";
+import LeadImage from "./images/lead.png";
 
 import { ReactComponent as TargetIcon } from "feather-icons/dist/icons/target.svg";
 import { ReactComponent as StarIcon } from "feather-icons/dist/icons/star.svg";
@@ -128,7 +128,7 @@ export default () => {
           }
           buttonRounded={false}
           textOnLeft={false}
-          primaryButtonText="👉 PDF sichern"
+          primaryButtonText="Jetzt sichern"
           // https://mailtolink.me/
           primaryButtonUrl="https://wissen.momot-consulting.de/"
           secondaryButtonUrl="https://www.freelancermap.de/profil/lukasz-momot"
