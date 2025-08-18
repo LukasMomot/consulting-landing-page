@@ -108,7 +108,7 @@ export default () => {
       </section>
       <section id="magnet">
         <LeadMaget
-          subheading={<Subheading>Gratis PDF</Subheading>}
+          subheading={<Subheading>Gratis E-Book</Subheading>}
           heading={
             <>
               Wissen
