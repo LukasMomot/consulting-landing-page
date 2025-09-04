@@ -93,7 +93,7 @@ export default ({
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
             <ButtonContainer>
-              <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+              <PrimaryButton buttonRounded={buttonRounded} as="a" target="_blank" href={primaryButtonUrl}>
                 {primaryButtonText}
               </PrimaryButton>
 
