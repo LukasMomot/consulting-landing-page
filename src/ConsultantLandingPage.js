@@ -5,12 +5,14 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";
 import Contact from "components/features/TwoColWithButton.js";
+import LeadMaget from "components/features/LeadMagnet.js";
 import Facts from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
 import contactLogoSrc from "./images/consultant_contact.jpeg";
 
 import HeroImage from "./images/hero_image.jpeg";
+import LeadImage from "./images/lead.png";
 
 import { ReactComponent as TargetIcon } from "feather-icons/dist/icons/target.svg";
 import { ReactComponent as StarIcon } from "feather-icons/dist/icons/star.svg";
@@ -102,6 +104,40 @@ export default () => {
             },
           ]}
           linkText=""
+        />
+      </section>
+      <section id="magnet">
+        <LeadMaget
+          subheading={<Subheading>Gratis E-Book</Subheading>}
+          heading={
+            <>
+              Wissen
+              <wbr /> <HighlightedText>clever</HighlightedText> teilen
+            </>
+          }
+          description={
+            <Description>
+              Kennen Sie das? Wissen ist im Team vorhanden – aber niemand findet es, wenn es wirklich gebraucht wird.
+              <br />
+              <br />
+              <BuzzwordText>Was Sie in diesem PDF erwartet:</BuzzwordText>
+              <br />
+              Dieser Blueprint zeigt Ihnen, wie Sie Wissenssilos aufbrechen, Abläufe vereinfachen und Ihre Teams effizienter machen – mit klaren Formaten und erprobten Methoden aus der Projektpraxis.
+
+            </Description>
+          }
+          buttonRounded={false}
+          textOnLeft={false}
+          primaryButtonText="Jetzt sichern"
+          // https://mailtolink.me/
+          primaryButtonUrl="https://wissen.momot-consulting.de/"
+          secondaryButtonUrl="https://www.freelancermap.de/profil/lukasz-momot"
+          imageSrc={
+            LeadImage
+          }
+          imageCss={imageCss}
+          imageDecoratorBlob={true}
+          imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
         />
       </section>
       <section id="facts">

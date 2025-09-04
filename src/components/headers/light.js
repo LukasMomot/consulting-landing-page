@@ -90,6 +90,7 @@ export default ({ roundedHeaderButton = false, useLinks = true, logoLink, links,
       <NavLink href="#services">Dienstleistungen</NavLink>
       <NavLink href="#values">Werte</NavLink>
       {/* <NavLink href="/#">Pricing</NavLink> */}
+      <NavLink href="#magnet">Gratis E-Book</NavLink>
       <NavLink href="#contact">Kontakt</NavLink>
       {/* <NavLink href="/#" tw="lg:ml-12!">
         Login
