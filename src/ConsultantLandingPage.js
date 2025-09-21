@@ -11,7 +11,8 @@ import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
 import contactLogoSrc from "./images/consultant_contact.jpeg";
 
-import HeroImage from "./images/hero_image.jpeg";
+// import HeroImage from "./images/hero_image.jpeg";
+import Hero2 from "./images/Hero2.png";
 import LeadImage from "./images/lead.png";
 
 import { ReactComponent as TargetIcon } from "feather-icons/dist/icons/target.svg";
@@ -68,7 +69,7 @@ export default () => {
           </>
         }
         subDescription=".NET ⦁ Azure Cloud ⦁ Angular ⦁  NodeJS"
-        imageSrc={HeroImage}
+        imageSrc={Hero2}
         imageCss={imageCss}
         imageDecoratorBlob={true}
         primaryButtonText="Kontakt aufnehmen"
