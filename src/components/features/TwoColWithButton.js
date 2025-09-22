@@ -6,6 +6,8 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { SecondaryButton as SecondaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as LinkedInIcon } from "feather-icons/dist/icons/linkedin.svg"; // Update LinkedIn icon import
+import { ReactComponent as MailIcon } from "feather-icons/dist/icons/mail.svg";
+import { ReactComponent as BeraterprofilIcon } from "feather-icons/dist/icons/briefcase.svg";
 
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
@@ -38,12 +40,12 @@ const Heading = tw(
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base font-medium leading-relaxed text-secondary-100`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
-  tw`mt-8 w-44 md:w-40 md:mt-8 text-sm inline-block mx-auto md:mx-0 text-center`,
+  tw`mt-8 w-44 md:w-40 md:mt-8 text-sm inline-block mx-auto md:mx-0 text-center flex items-center justify-center`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
 const SecondaryButton = styled(SecondaryButtonBase)(props => [
-  tw`mt-8 w-44 md:w-40 sm:ml-0 md:ml-3 md:mt-8 text-sm inline-block text-center`,
+  tw`mt-8 sm:ml-0 md:ml-3 md:mt-8 text-sm inline-block text-center flex items-center justify-center`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
@@ -94,13 +96,13 @@ export default ({
             <Description>{description}</Description>
             <ButtonContainer>
               <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
-                {primaryButtonText}
+                <MailIcon tw="mr-2" />  {primaryButtonText}
               </PrimaryButton>
               <LinkedInButton buttonRounded={buttonRounded} as="a" href={linkedinButtonUrl} target="_blank">
                 <LinkedInIcon tw="mr-2" /> Profil
               </LinkedInButton>
               <SecondaryButton buttonRounded={buttonRounded} as="a" target="_blank" href={secondaryButtonUrl}>
-                Beraterprofil
+                <BeraterprofilIcon tw="mr-2" /> Beraterprofil
               </SecondaryButton>
             </ButtonContainer>
           </TextContent>
