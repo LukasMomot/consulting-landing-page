@@ -9,7 +9,9 @@ import LeadMaget from "components/features/LeadMagnet.js";
 import Facts from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Services from "components/features/DashedBorderSixFeatures";
-import contactLogoSrc from "./images/consultant_contact.jpeg";
+// import contactLogoSrc from "./images/consultant_contact.jpeg";
+import contactLogoSrc from "./images/contact_img.png";
+
 
 // import HeroImage from "./images/hero_image.jpeg";
 import Hero2 from "./images/Hero2.png";
